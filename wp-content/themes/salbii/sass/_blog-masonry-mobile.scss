@@ -1,0 +1,323 @@
+/**
+ * ----------------------------------------------------------------------
+ * Blog section - Masonry design
+ * See _vc-components.scss for masonry styling (project grid)
+ * Mobile first
+ */
+
+body.blog-style-masonry {
+	// background:#F5F5F5; //$ui-color-lightgrey;
+}
+
+
+// Featured  Masonry Layout Post
+.featured-post .isotope-item {
+	position: relative;
+	overflow: hidden;
+	background:#FAFAFA; // $body-bg;
+	margin-top: 2em;
+	padding: 3em;
+	border: none!important;
+
+	@include box-shadow (1px 0px 0px 0 rgba(0, 0, 0, 0.02), -1px 0px 0px 0 rgba(0, 0, 0, 0.02), 0 1px 0px 0 rgba(0, 0, 0, 0.08), 0 2px 3px 0 rgba(0, 0, 0, 0.07));
+	@include clearfix;
+
+	.post-format-icon {
+		position: absolute;
+		top: 50%;
+		width: 80px;
+		height: 80px;
+		font-size: 40px;
+		line-height: 80px;
+		margin-left: -40px;
+		margin-top: -40px;
+	}
+
+	.post-thumb, .content-part.colored-card-part {
+		// position: absolute;
+		width: 100%;
+		overflow: hidden;
+		left: 0;
+		bottom: 0;
+		top: 0;
+
+		&.no-featured-image {
+			display: block;
+		}
+
+		img {
+			position: absolute;
+			left: 0;
+			height: 100%;
+			width: auto;
+			max-width: none;
+			margin: 0;
+		}
+	}
+
+	// Special styling for video  content-fromat
+	// &.format-video .colored-card-part {
+	// 	margin: -3em;
+	// 	position: relative;
+	// 	float: left;
+	// }
+
+	// Special stling for aside content-fromat
+	&.post-format {
+		padding: 0;
+
+		.post-format-icon {
+			position: absolute;
+			top: -10px;
+			left: -100px;
+			margin: 0;
+		}
+
+		.content-part {
+			padding: 3em;
+			width: 100%;
+		}
+
+		.colored-card-part {
+			position: relative;
+			width: 100%;
+			padding-left: 8em;
+			// padding-bottom: 13em;
+			// margin-bottom: -10em;
+			text-align: left;
+
+			p:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+	}
+
+	// ===================
+
+	&.format-video .colored-card-part {
+		padding-left: 0;
+	}
+
+	// ===================
+
+	&.format-link .colored-card-part {
+		.content-part__innercontent {
+			margin-top: 1em;
+		}
+	}
+
+	// ===================
+
+	&.format-quote .colored-card-part {
+		.content-part__innercontent {
+			margin-top: 1em;
+
+			cite {
+				text-align: left;
+			}
+		}
+	}
+
+	// ===================
+
+	&.format-standard .colored-card-part,
+	&.format-gallery .colored-card-part,
+	&.format-image .colored-card-part {
+		padding-left: 0;
+		padding-bottom: 0;
+		margin-bottom: 0;
+
+		img {
+			position: relative;
+			height: auto;
+			width: 100%;
+		}
+	}
+
+
+
+	// ===================
+
+	.post-title {
+		font-size: emCalc(36px);
+	}
+
+	.post-categories {
+		font-size: emCalc(14px);
+		letter-spacing: 1px;
+	}
+
+	.entry-meta {
+		margin-top: 2em;
+	}
+
+	.entry-content,
+	.entry-summary {
+		font-size: 125%;
+		font-weight: 300;
+		display: inline-block;
+		// opacity: .7;
+	}
+}
+
+
+// Masonry card styling
+
+// Special styling for teaser of custom post format
+
+.post-format {
+	position: relative;
+}
+
+.colored-card-part {
+	position: relative;
+	text-align: center;
+	@include text-shadow(0 1px 1px rgba(0,0,0,.1));
+
+	p {
+		font-size: emCalc(21px);
+		line-height: 1.3;
+	}
+
+	blockquote {
+		margin: 0;
+		padding: 0;
+		border-style: none;
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	cite {
+		margin-top: 2em;
+		margin-bottom: 0;
+		opacity: .75;
+		font-size: 12px;
+		letter-spacing: 1px;
+		font-style: normal;
+
+		&:before {
+			content: '';
+		}
+	}
+
+	.post-link {
+		z-index: 3;
+		@include emptyPseudoElement;
+	}
+
+	.content-part__imagebg {
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		opacity: .2;
+	}
+
+	.content-part__innercontent {
+		width: 100%;
+		height: 100%;
+
+		position: relative;
+		z-index: 2;
+	}
+
+	.post-title {
+		font-size: emCalc(14px)!important;
+	}
+
+	.post-title, cite {
+		text-transform: uppercase;
+		font-weight: normal;
+		margin-bottom: 2em;
+	}
+
+	// .post-title {
+	// 	display: none;
+	// }
+
+	.post-categories {
+		margin-bottom: 1em;
+		display: inline-block;
+	}
+
+	.post-title, cite {
+		text-align: center;
+	}
+
+} //.colored-card-part.post-format
+
+
+.isotope-item.format-standard  .no-featured-image{
+	display: none;
+}
+
+
+// Video post format
+.flex-video {
+	padding-top: 0;
+}
+
+.isotope-item {
+	.flex-video {
+		margin-bottom: 0;
+	}
+}
+
+
+// Format type icons for masonry blog layout
+
+.format-standard {
+	.post-format-icon:before {
+			content: "\e037"; // Feather icon
+	}
+}
+
+.format-quote {
+	.post-format-icon:before {
+			content: "\e051"; // Wuote icon
+	}
+}
+
+.format-link {
+	.post-format-icon:before {
+			content: "\e058"; // Link icon
+	}
+}
+
+.format-aside {
+	.post-format-icon:before {
+			content: "\e0c7"; // Text
+	}
+}
+
+.format-status {
+	.post-format-icon:before {
+			content: "\e050"; // Comment icon
+	}
+}
+
+.format-audio {
+	.post-format-icon:before {
+			content: "\e064"; // Music icon
+	}
+}
+
+.format-chat {
+	.colored-card-part {
+		font-family: Consolas, 'Lucida Console', Monaco, monospace;
+
+		p {
+			text-align: left;
+			margin-bottom: .25em;
+			font-size: emCalc(16px);
+		}
+	}
+	.post-format-icon:before {
+			content: "\e04f"; // Comment chat
+	}
+}

@@ -1,0 +1,83 @@
+.vc_iconbox {
+	-webkit-transform: translateZ(0px);
+	// fix Chrome bug when other text moves on hover
+	// I spent 2 hours to fix it X-(
+
+	.iconbox__icon {}
+
+	.effect-helper {
+		pointer-events: none;
+		position: absolute;
+		z-index: 0;
+
+		width: 100%!important;
+		height: 100%!important;
+		left: 0;
+		top: 0;
+		margin: 0;
+		border:none!important;
+		-webkit-box-sizing: content-box;
+		-moz-box-sizing: content-box;
+		box-sizing: content-box;
+	}
+
+	&.border .effect-helper {
+		border: none;
+	}
+}
+
+/* Effect 1 */
+// .vc-icon-effect-1 .icon {
+// }
+
+// border around the icon badge that goes out on hover
+.vc-icon-effect-1a .effect-helper {
+	top: -7px;
+	left: -7px;
+	padding: 7px;
+	// box-shadow: 0 0 0 2px #009BDE; // brand color
+	background: transparent!important;
+
+	@include transition( all .2s ease-in-out);
+	@include transform( scale(.8) );
+	opacity: 0;
+}
+
+/* Effect 1a */
+
+// I can't do this as icon can have custom colors
+// .no-touch .vc-icon-effect-1a:hover .icon {
+	// background: #fff; // brand contrast
+	// color: #009BDE; // brand color
+// }
+
+// .no-touch .vc-icon-effect-1a:hover {} // neeed this empty for Chrome bug http://goo.gl/QL5UTZ
+
+.no-touch .vc-icon-effect-1a:hover .effect-helper {
+	@include transform( scale(1) );
+	opacity: 1;
+}
+
+
+
+
+/* Effect 1b */
+// .no-touch .vc-icon-effect-1b .icon:hover {
+// 	background: rgba(0,0,0,1);
+// 	color: #41ab6b;
+// }
+
+// .vc-icon-effect-1b .hi-icon:after {
+// 	-webkit-transform: scale(1.2);
+// 	-moz-transform: scale(1.2);
+// 	-ms-transform: scale(1.2);
+// 	transform: scale(1.2);
+// }
+
+// .no-touch .vc_iconbox:hover .vc-icon-effect-1b .icon:after {
+// 	-webkit-transform: scale(1);
+// 	-moz-transform: scale(1);
+// 	-ms-transform: scale(1);
+// 	transform: scale(1);
+// 	opacity: 1;
+// }

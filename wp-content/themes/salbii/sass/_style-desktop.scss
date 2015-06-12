@@ -1,0 +1,67 @@
+/**
+ * style.css - is mobile first
+ * _style-desktop - contain descktop only styles
+ */
+
+.h0 { font-size: $h0-font-size; }
+h1, .h1 { font-size: $h1-font-size; }
+h2, .h2 { font-size: $h2-font-size; }
+h3, .h3 { font-size: $h3-font-size; }
+h4, .h4 { font-size: $h4-font-size; }
+h5, .h5 { font-size: $h5-font-size; }
+h6, .h6 { font-size: $h6-font-size; }
+
+h2 {
+	.h0 { font-size: emCalcWithBase($h0-font-size, $h2-font-size); }
+	.h1 { font-size: emCalcWithBase($h1-font-size, $h2-font-size); }
+	.h2 { font-size: emCalcWithBase($h2-font-size, $h2-font-size); }
+	.h3 { font-size: emCalcWithBase($h3-font-size, $h2-font-size); }
+	.h4 { font-size: emCalcWithBase($h4-font-size, $h2-font-size); }
+	.h5 { font-size: emCalcWithBase($h5-font-size, $h2-font-size); }
+	.h6 { font-size: emCalcWithBase($h6-font-size, $h2-font-size); }
+}
+
+h3 {
+	.h0 { font-size: emCalcWithBase($h0-font-size, $h3-font-size); }
+	.h1 { font-size: emCalcWithBase($h1-font-size, $h3-font-size); }
+	.h2 { font-size: emCalcWithBase($h2-font-size, $h3-font-size); }
+	.h3 { font-size: emCalcWithBase($h3-font-size, $h3-font-size); }
+	.h4 { font-size: emCalcWithBase($h4-font-size, $h3-font-size); }
+	.h5 { font-size: emCalcWithBase($h5-font-size, $h3-font-size); }
+	.h6 { font-size: emCalcWithBase($h6-font-size, $h3-font-size); }
+}
+
+h4 {
+	.h0 { font-size: emCalcWithBase($h0-font-size, $h4-font-size); }
+	.h1 { font-size: emCalcWithBase($h1-font-size, $h4-font-size); }
+	.h2 { font-size: emCalcWithBase($h2-font-size, $h4-font-size); }
+	.h3 { font-size: emCalcWithBase($h3-font-size, $h4-font-size); }
+	.h4 { font-size: emCalcWithBase($h4-font-size, $h4-font-size); }
+	.h5 { font-size: emCalcWithBase($h5-font-size, $h4-font-size); }
+	.h6 { font-size: emCalcWithBase($h6-font-size, $h4-font-size); }
+}
+
+h5 {
+	.h0 { font-size: emCalcWithBase($h0-font-size, $h5-font-size); }
+	.h1 { font-size: emCalcWithBase($h1-font-size, $h5-font-size); }
+	.h2 { font-size: emCalcWithBase($h2-font-size, $h5-font-size); }
+	.h3 { font-size: emCalcWithBase($h3-font-size, $h5-font-size); }
+	.h4 { font-size: emCalcWithBase($h4-font-size, $h5-font-size); }
+	.h5 { font-size: emCalcWithBase($h5-font-size, $h5-font-size); }
+	.h6 { font-size: emCalcWithBase($h6-font-size, $h5-font-size); }
+}
+
+h6 {
+	.h0 { font-size: emCalcWithBase($h0-font-size, $h6-font-size); }
+	.h1 { font-size: emCalcWithBase($h1-font-size, $h6-font-size); }
+	.h2 { font-size: emCalcWithBase($h2-font-size, $h6-font-size); }
+	.h3 { font-size: emCalcWithBase($h3-font-size, $h6-font-size); }
+	.h4 { font-size: emCalcWithBase($h4-font-size, $h6-font-size); }
+	.h5 { font-size: emCalcWithBase($h5-font-size, $h6-font-size); }
+	.h6 { font-size: emCalcWithBase($h6-font-size, $h6-font-size); }
+}
+
+/**
+* ----------------------------------------------------------------------
+* Predefined margins - mobile first
+*/

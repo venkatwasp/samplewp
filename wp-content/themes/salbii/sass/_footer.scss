@@ -1,0 +1,22 @@
+/**
+ * ----------------------------------------------------------------------
+ * Pre-footer Call to action
+ */
+
+.calltoaction-area {
+	text-align: left;
+
+	.columns:last-child, .wpb_column:last-child {
+		text-align: left;
+	}
+
+	.calltoaction-area__button {
+		margin: 0;
+	}
+}
+
+
+.calltoaction-area__title {
+	font-size: $h2-font-size;
+	line-height: 1.125;
+}

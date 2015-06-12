@@ -1,0 +1,284 @@
+/*! lbmn: Custom Media Queries */
+
+/**
+* ----------------------------------------------------------------------
+* Retina Devices
+* @link http://stackoverflow.com/questions/16459358/media-queries-on-retina-enabled-devices
+*/
+
+// hide for non-retina by default
+
+.show-for-retina {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width:815px){
+    form.search-block{
+        min-width: 23px;
+    }
+
+    form.search-block button{
+        padding: 10px 0 !important;
+    }
+}
+
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi) {
+
+	.show-for-retina {
+		display: inline-block;
+	}
+
+	.hide-for-retina {
+		display: none;
+	}
+
+}
+
+
+@media only screen and (max-width: #{$small-screen-max}) {
+	/* mobile margins override the normal ones defined above */
+
+	body div#global-container {
+		.m-margin-top_0px   { margin-top: 0px;    }
+		.m-margin-top_5px   { margin-top: 5px;    }
+		.m-margin-top_-5px  { margin-top: -5px;   }
+		.m-margin-top_10px  { margin-top: 10px;   }
+		.m-margin-top_-10px   { margin-top: -10px;  }
+		.m-margin-top_15px  { margin-top: 15px;   }
+		.m-margin-top_-15px   { margin-top: -15px;  }
+		.m-margin-top_20px  { margin-top: 20px;   }
+		.m-margin-top_-20px   { margin-top: -20px;  }
+		.m-margin-top_25px  { margin-top: 25px;   }
+		.m-margin-top_-25px   { margin-top: -25px;  }
+		.m-margin-top_30px  { margin-top: 30px;   }
+		.m-margin-top_-30px   { margin-top: -30px;  }
+		.m-margin-top_35px  { margin-top: 35px;   }
+		.m-margin-top_-35px   { margin-top: -35px;  }
+		.m-margin-top_40px  { margin-top: 40px;   }
+		.m-margin-top_-40px   { margin-top: -40px;  }
+		.m-margin-top_45px  { margin-top: 45px;   }
+		.m-margin-top_-45px   { margin-top: -45px;  }
+		.m-margin-top_50px  { margin-top: 50px;   }
+		.m-margin-top_-50px   { margin-top: -50px;  }
+		.m-margin-top_55px  { margin-top: 55px;   }
+		.m-margin-top_-55px   { margin-top: -55px;  }
+		.m-margin-top_60px  { margin-top: 60px;   }
+		.m-margin-top_-60px   { margin-top: -60px;  }
+		.m-margin-top_65px  { margin-top: 65px;   }
+		.m-margin-top_-65px   { margin-top: -65px;  }
+		.m-margin-top_70px  { margin-top: 70px;   }
+		.m-margin-top_-70px   { margin-top: -70px;  }
+		.m-margin-top_75px  { margin-top: 75px;   }
+		.m-margin-top_-75px   { margin-top: -75px;  }
+		.m-margin-top_80px  { margin-top: 80px;   }
+		.m-margin-top_-80px   { margin-top: -80px;  }
+		.m-margin-top_85px  { margin-top: 85px;   }
+		.m-margin-top_-85px   { margin-top: -85px;  }
+		.m-margin-top_90px  { margin-top: 90px;   }
+		.m-margin-top_-90px   { margin-top: -90px;  }
+		.m-margin-top_95px  { margin-top: 95px;   }
+		.m-margin-top_-95px   { margin-top: -95px;  }
+		.m-margin-top_100px   { margin-top: 100px;  }
+		.m-margin-top_-100px  { margin-top: -100px; }
+
+		.m-margin-top_150px   { margin-top: 150px;  }
+		.m-margin-top_-150px  { margin-top: -150px; }
+		.m-margin-top_200px   { margin-top: 200px;  }
+		.m-margin-top_-200px  { margin-top: -200px; }
+		.m-margin-top_250px   { margin-top: 250px;  }
+		.m-margin-top_-250px  { margin-top: -250px; }
+
+
+		// RIGHT
+
+		.m-margin-right_0px   { margin-right: 0px;    }
+		.m-margin-right_5px   { margin-right: 5px;    }
+		.m-margin-right_-5px  { margin-right: -5px;   }
+		.m-margin-right_10px  { margin-right: 10px;   }
+		.m-margin-right_-10px { margin-right: -10px;    }
+		.m-margin-right_15px  { margin-right: 15px;   }
+		.m-margin-right_-15px { margin-right: -15px;    }
+		.m-margin-right_20px  { margin-right: 20px;   }
+		.m-margin-right_-20px { margin-right: -20px;    }
+		.m-margin-right_25px  { margin-right: 25px;   }
+		.m-margin-right_-25px { margin-right: -25px;    }
+		.m-margin-right_30px  { margin-right: 30px;   }
+		.m-margin-right_-30px { margin-right: -30px;    }
+		.m-margin-right_35px  { margin-right: 35px;   }
+		.m-margin-right_-35px { margin-right: -35px;    }
+		.m-margin-right_40px  { margin-right: 40px;   }
+		.m-margin-right_-40px { margin-right: -40px;    }
+		.m-margin-right_45px  { margin-right: 45px;   }
+		.m-margin-right_-45px { margin-right: -45px;    }
+		.m-margin-right_50px  { margin-right: 50px;   }
+		.m-margin-right_-50px { margin-right: -50px;    }
+		.m-margin-right_55px  { margin-right: 55px;   }
+		.m-margin-right_-55px { margin-right: -55px;    }
+		.m-margin-right_60px  { margin-right: 60px;   }
+		.m-margin-right_-60px { margin-right: -60px;    }
+		.m-margin-right_65px  { margin-right: 65px;   }
+		.m-margin-right_-65px { margin-right: -65px;    }
+		.m-margin-right_70px  { margin-right: 70px;   }
+		.m-margin-right_-70px { margin-right: -70px;    }
+		.m-margin-right_75px  { margin-right: 75px;   }
+		.m-margin-right_-75px { margin-right: -75px;    }
+		.m-margin-right_80px  { margin-right: 80px;   }
+		.m-margin-right_-80px { margin-right: -80px;    }
+		.m-margin-right_85px  { margin-right: 85px;   }
+		.m-margin-right_-85px { margin-right: -85px;    }
+		.m-margin-right_90px  { margin-right: 90px;   }
+		.m-margin-right_-90px { margin-right: -90px;    }
+		.m-margin-right_95px  { margin-right: 95px;   }
+		.m-margin-right_-95px   { margin-right: -95px;  }
+		.m-margin-right_100px   { margin-right: 100px;  }
+		.m-margin-right_-100px  { margin-right: -100px; }
+
+		.m-margin-right_150px   { margin-right: 150px;  }
+		.m-margin-right_-150px  { margin-right: -150px; }
+		.m-margin-right_200px   { margin-right: 200px;  }
+		.m-margin-right_-200px  { margin-right: -200px; }
+		.m-margin-right_250px   { margin-right: 250px;  }
+		.m-margin-right_-250px  { margin-right: -250px; }
+
+		// BOTTOM
+
+		.m-margin-bottom_0px  { margin-bottom: 0px;   }
+		.m-margin-bottom_5px  { margin-bottom: 5px;   }
+		.m-margin-bottom_-5px   { margin-bottom: -5px;    }
+		.m-margin-bottom_10px   { margin-bottom: 10px;    }
+		.m-margin-bottom_-10px  { margin-bottom: -10px;   }
+		.m-margin-bottom_15px   { margin-bottom: 15px;    }
+		.m-margin-bottom_-15px  { margin-bottom: -15px;   }
+		.m-margin-bottom_20px   { margin-bottom: 20px;    }
+		.m-margin-bottom_-20px  { margin-bottom: -20px;   }
+		.m-margin-bottom_25px   { margin-bottom: 25px;    }
+		.m-margin-bottom_-25px  { margin-bottom: -25px;   }
+		.m-margin-bottom_30px   { margin-bottom: 30px;    }
+		.m-margin-bottom_-30px  { margin-bottom: -30px;   }
+		.m-margin-bottom_35px   { margin-bottom: 35px;    }
+		.m-margin-bottom_-35px  { margin-bottom: -35px;   }
+		.m-margin-bottom_40px   { margin-bottom: 40px;    }
+		.m-margin-bottom_-40px  { margin-bottom: -40px;   }
+		.m-margin-bottom_45px   { margin-bottom: 45px;    }
+		.m-margin-bottom_-45px  { margin-bottom: -45px;   }
+		.m-margin-bottom_50px   { margin-bottom: 50px;    }
+		.m-margin-bottom_-50px  { margin-bottom: -50px;   }
+		.m-margin-bottom_55px   { margin-bottom: 55px;    }
+		.m-margin-bottom_-55px  { margin-bottom: -55px;   }
+		.m-margin-bottom_60px   { margin-bottom: 60px;    }
+		.m-margin-bottom_-60px  { margin-bottom: -60px;   }
+		.m-margin-bottom_65px   { margin-bottom: 65px;    }
+		.m-margin-bottom_-65px  { margin-bottom: -65px;   }
+		.m-margin-bottom_70px   { margin-bottom: 70px;    }
+		.m-margin-bottom_-70px  { margin-bottom: -70px;   }
+		.m-margin-bottom_75px   { margin-bottom: 75px;    }
+		.m-margin-bottom_-75px  { margin-bottom: -75px;   }
+		.m-margin-bottom_80px   { margin-bottom: 80px;    }
+		.m-margin-bottom_-80px  { margin-bottom: -80px;   }
+		.m-margin-bottom_85px   { margin-bottom: 85px;    }
+		.m-margin-bottom_-85px  { margin-bottom: -85px;   }
+		.m-margin-bottom_90px   { margin-bottom: 90px;    }
+		.m-margin-bottom_-90px  { margin-bottom: -90px;   }
+		.m-margin-bottom_95px   { margin-bottom: 95px;    }
+		.m-margin-bottom_-95px  { margin-bottom: -95px;   }
+		.m-margin-bottom_100px  { margin-bottom: 100px;   }
+		.m-margin-bottom_-100px   { margin-bottom: -100px;  }
+
+		.m-margin-bottom_150px  { margin-bottom: 150px;   }
+		.m-margin-bottom_-150px   { margin-bottom: -150px;  }
+		.m-margin-bottom_200px  { margin-bottom: 200px;   }
+		.m-margin-bottom_-200px   { margin-bottom: -200px;  }
+		.m-margin-bottom_250px  { margin-bottom: 250px;   }
+		.m-margin-bottom_-250px   { margin-bottom: -250px;  }
+
+		// LEFT
+
+		.m-margin-left_0px  { margin-left: 0px;   }
+		.m-margin-left_5px  { margin-left: 5px;   }
+		.m-margin-left_-5px   { margin-left: -5px;    }
+		.m-margin-left_10px   { margin-left: 10px;    }
+		.m-margin-left_-10px  { margin-left: -10px; }
+		.m-margin-left_15px   { margin-left: 15px;    }
+		.m-margin-left_-15px  { margin-left: -15px; }
+		.m-margin-left_20px   { margin-left: 20px;    }
+		.m-margin-left_-20px  { margin-left: -20px; }
+		.m-margin-left_25px   { margin-left: 25px;    }
+		.m-margin-left_-25px  { margin-left: -25px; }
+		.m-margin-left_30px   { margin-left: 30px;    }
+		.m-margin-left_-30px  { margin-left: -30px; }
+		.m-margin-left_35px   { margin-left: 35px;    }
+		.m-margin-left_-35px  { margin-left: -35px; }
+		.m-margin-left_40px   { margin-left: 40px;    }
+		.m-margin-left_-40px  { margin-left: -40px; }
+		.m-margin-left_45px   { margin-left: 45px;    }
+		.m-margin-left_-45px  { margin-left: -45px; }
+		.m-margin-left_50px   { margin-left: 50px;    }
+		.m-margin-left_-50px  { margin-left: -50px; }
+		.m-margin-left_55px   { margin-left: 55px;    }
+		.m-margin-left_-55px  { margin-left: -55px; }
+		.m-margin-left_60px   { margin-left: 60px;    }
+		.m-margin-left_-60px  { margin-left: -60px; }
+		.m-margin-left_65px   { margin-left: 65px;    }
+		.m-margin-left_-65px  { margin-left: -65px; }
+		.m-margin-left_70px   { margin-left: 70px;    }
+		.m-margin-left_-70px  { margin-left: -70px; }
+		.m-margin-left_75px   { margin-left: 75px;    }
+		.m-margin-left_-75px  { margin-left: -75px; }
+		.m-margin-left_80px   { margin-left: 80px;    }
+		.m-margin-left_-80px  { margin-left: -80px; }
+		.m-margin-left_85px   { margin-left: 85px;    }
+		.m-margin-left_-85px  { margin-left: -85px; }
+		.m-margin-left_90px   { margin-left: 90px;    }
+		.m-margin-left_-90px  { margin-left: -90px; }
+		.m-margin-left_95px   { margin-left: 95px;    }
+		.m-margin-left_-95px  { margin-left: -95px; }
+		.m-margin-left_100px  { margin-left: 100px; }
+		.m-margin-left_-100px   { margin-left: -100px;  }
+
+		.m-margin-left_150px  { margin-left: 150px; }
+		.m-margin-left_-150px   { margin-left: -150px;  }
+		.m-margin-left_200px  { margin-left: 200px; }
+		.m-margin-left_-200px   { margin-left: -200px;  }
+		.m-margin-left_250px  { margin-left: 250px; }
+		.m-margin-left_-250px   { margin-left: -250px;  }
+	}
+
+
+	/**
+	* ----------------------------------------------------------------------
+	* Visual Composer - Pie Chart
+	*/
+
+	.vc_pie_chart {
+		margin-left: auto;
+		margin-right: auto;
+
+		padding: 5% 10%;
+		width: 80%;
+	}
+
+}
+
+/**
+* ----------------------------------------------------------------------
+* Used to alter styles for screens at least 768px wide. This is where the grid changes
+*/
+
+@media #{$small} {
+
+	@import "_style-desktop";
+	@import "_header"; // header styles - screen wider that 768px
+	@import "_title"; // header styles - screen wider that 768px
+	@import "_footer"; // footer styles - screen wider that 768px
+	@import "_vc-components"; // visual composer components - screen wider that 768px
+	@import "_blog-standard";
+	@import "_blog-masonry";
+	@import "_comments"; // import website comments styles
+
+	// .page-title__breadcrumbs {
+	// 	width: auto; // for desktop
+	// }
+}

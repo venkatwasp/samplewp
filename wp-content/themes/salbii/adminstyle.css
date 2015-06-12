@@ -1,0 +1,194 @@
+/*
+* Styles to use in the WP admin section
+*/
+
+/* 'Icon code' in VC button creation form */
+input[name='icon'] {
+	font-family: 'iconfont';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+
+	font-size: 200%;
+	padding: 4px!important;
+	/*width: 30%!important;*/
+}
+
+.wpb_edit_form_elements {
+	padding: 10px;
+}
+
+/* Make all text elements widgets always have black text */
+
+.wpb_vc_param_value.textarea_html * {
+	color: #000!important;
+}
+
+/* Fix Visual Composer bugs */
+
+body .wpb_row_container > .wpb_vc_column {
+	height: auto;
+}
+
+
+
+/* REDUX OPTION PANEL STYLES */
+
+/* disable +/- button for Google Fonts Widget */
+body .redux-font-select.fs-size {
+	display: none;
+}
+
+body .redux-font-select .fs-results {
+	max-height: 350px;
+}
+
+body .redux-opts-info-field {
+	margin-top: 50px;
+	margin-bottom: 25px;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 90%;
+	position: relative;
+}
+
+body .redux-opts-group-tab h4.section-divider {
+	position: relative;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 18px;
+
+	text-shadow: 0 -1px 0 #333;
+	color: #FFF;
+
+	margin: 0;
+	padding: 12px 16px;
+	border-radius: 3px;
+
+	background: #777;
+	background-image: -webkit-gradient(linear,left bottom,left top,from(#6D6D6D),to(#808080));
+	background-image: -webkit-linear-gradient(bottom,#6D6D6D,#808080);
+	background-image: -moz-linear-gradient(bottom,#6D6D6D,#808080);
+	background-image: -o-linear-gradient(bottom,#6D6D6D,#808080);
+	background-image: linear-gradient(to top,#6D6D6D,#808080);
+}
+
+body .redux-opts-group-tab h4.section-divider:before {
+	content: " ";
+	position: absolute;
+	left: 40px;
+	bottom: -9px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 10px 10px 0 10px;
+	border-color: #6D6D6D transparent transparent transparent;
+	-webkit-transform:rotate(360deg);
+}
+
+body .redux-opts-group-tab h3 {
+	margin-top: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 90%;
+	font-weight: normal;
+}
+
+body .redux-opts-section-desc {
+	padding: 0;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 90%;
+}
+
+body .redux-opts-group-tab .form-table {
+	border-top-style: none;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 90%;
+}
+
+body .redux-opts-group-tab .form-table tr th {
+	padding-top: 36px!important;
+	font-weight: normal;
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 1.4em;
+	color: #222;
+	/*width: 30%;*/
+	padding-right: 5%;
+	text-shadow: #FFF 0 1px 0;
+}
+
+body .redux-opts-group-tab .form-table tr {
+	border-bottom: 1px solid #F7F7F7;
+}
+
+body .redux-opts-group-tab .form-table tr th,
+body .redux-opts-group-tab .form-table tr td {
+	padding-top: 33px;
+	padding-left: 0;
+}
+
+body.appearance_page_themeoptions p.help, body.appearance_page_themeoptions p.description,
+body.appearance_page_themeoptions span.description, body.appearance_page_themeoptions .form-wrap p {
+	display: inline-block;
+	margin-top: 15px;
+	font-size: 12px;
+	font-style: normal;
+	opacity: .75;
+}
+
+.redux-opts-group-tab input[type="text"],
+.redux-opts-group-tab input[type="password"],
+.redux-opts-group-tab input[type="checkbox"],
+.redux-opts-group-tab input[type="radio"],
+.redux-opts-group-tab .ui-autocomplete-input,
+.redux-opts-group-tab textarea, .redux-opts-group-tab,
+.redux-opts-group-tab .uneditable-input {
+	margin-right: 15px;
+	font-size: 12px;
+}
+
+.redux-opts-group-tab input[type="text"],
+.redux-opts-group-tab input[type="password"],
+.uneditable-input {
+	width: 99%;
+	padding: 5px 6px;
+}
+
+.redux-radio-img.redux-radio-img-lbmn_footer_layout span, .redux-radio-img.redux-radio-img-lbmn_prefooter_layout span, .redux-radio-img.redux-radio-img-lbmn_content_boxed_outer_bg_pattern span, .redux-radio-img.redux-radio-img-lbmn_header_layout span {
+	font-size: 12px;
+}
+
+input.small-text {
+    padding: 5px 6px;
+    width: 4em !important;
+}
+
+input.regular-text {
+    padding: 5px 6px;
+    width: 99%;
+}
+
+input, select, textarea {
+	font-size: 12px;
+}
+
+.redux-opts-group-tab textarea {
+	padding: 5px 6px;
+	width: 99%;
+}
+
+/**
+* ----------------------------------------------------------------------
+* Special styling for 'Ultimate Addons for Visual Composer' WP plugin
+*/
+
+.wpb_el_type_icon_manager [data-icon]:before {
+	display: none;
+}

@@ -1,0 +1,293 @@
+/**
+* ----------------------------------------------------------------------
+* JetPack Sharedaddy widget styling
+*/
+
+body div.sharedaddy {
+
+	div.sd-block {
+		border: none;
+	}
+
+	li {
+
+		a.sd-button {
+			background: none;
+			// font-size: 17px;
+			line-height: 1;
+			color: $body-font-color-light !important;
+
+			border: 1px solid $ui-border-color !important;
+			@include border-radius( $global-radius );
+
+			padding: emCalc(15px);
+
+			&> span {
+				display: inline-block;
+				background: none;
+				// padding: emCalc(80px) emCalc(15px) emCalc(15px);
+			}
+
+
+			&.share-facebook, &.share-twitter, &.share-linkedin,
+			&.share-google-plus-1, &.share-pinterest, &.share-tumblr,
+			&.share-stumbleupon, &.share-pocket, &.share-reddit,
+			&.share-digg, &.share-email, &.share-print, &.share-more {
+				&:before {
+					@include icon-font;
+				}
+			}
+
+			&.share-facebook {
+				color: $color-facebook!important;
+
+				&:before {
+					content: "\e126";
+				}
+			}
+
+			&.share-twitter {
+				color: $color-twitter!important;
+
+				&:before {
+					content: "\e124";
+				}
+			}
+
+			&.share-tumblr {
+				color: $color-tumblr!important;
+
+				&:before {
+					content: "\e12d";
+				}
+			}
+
+			&.share-pinterest {
+				color: $color-pinterest!important;
+
+				&:before {
+					content: "\e12b";
+				}
+			}
+
+			&.share-stumbleupon {
+				color: $color-stumbleupon!important;
+
+				&:before {
+					content: "\e133";
+				}
+			}
+
+			&.share-google-plus-1 {
+				color: $color-googleplus!important;
+
+				&:before {
+					content: "\e129";
+				}
+			}
+
+			&.share-linkedin {
+				color: $color-linkedin!important;
+
+				&:before {
+					content: "\e12f";
+				}
+			}
+
+			&.share-pocket {
+				color: $color-pocket!important;
+
+				&:before {
+					content: "\e0eb";
+				}
+			}
+
+			&.share-reddit {
+				color: $color-reddit!important;
+
+				&:before {
+					content: "\e0ec";
+				}
+			}
+
+			&.share-digg {
+				color: $color-digg!important;
+
+				&:before {
+					content: "\e0f5";
+				}
+			}
+
+			&.share-print {
+				color: $color-print!important;
+
+				&:before {
+					content: "\e056";
+				}
+			}
+
+			&.share-email {
+				color: $color-email!important;
+
+				&:before {
+					content: "\e034";
+				}
+			}
+
+			&.share-more {
+				color: $color-facebook!important;
+
+				&:before {
+					content: "\e0aa";
+				}
+			}
+		}
+	}
+
+	.sharing-hidden .inner {
+		margin-top: 40px;
+		padding: 6px;
+	}
+}
+
+
+// in the blog footer
+
+.post .sharedaddy {
+	position: relative;
+	z-index: 1;
+
+	div.sd-block {
+		border: none;
+		padding: 0;
+	}
+
+	.sd-title {
+		display: none;
+	}
+
+	.sd-content {
+		width: 100%;
+		margin: 0;
+
+		border: 1px solid $ui-border-color !important;
+		@include border-radius( $global-radius $global-radius 0 0!important);
+	}
+
+	.sd-content > ul > li {
+		margin: 0!important;
+		text-align: center;
+
+		&:first-child {
+			a.sd-button {
+				border-left:none!important;
+			}
+		}
+
+		a.sd-button {
+			width: 100%;
+			border-width:0 0 0 1px!important;
+			@include border-radius(0);
+			padding: 20% 5% 15%;
+
+			& > span {
+				display: block;
+				width: 100%;
+				padding: 0;
+				margin-top: .7em;
+			}
+
+			&:before { // social network icon
+				font-size: 200%;
+			}
+		}
+	}
+
+	&.badgescount-1 .sd-content > ul > li {
+		width: 100%
+	}
+
+	&.badgescount-2 .sd-content > ul > li {
+		width: 50%
+	}
+
+	&.badgescount-3 .sd-content > ul > li {
+		width: 33.333%
+	}
+
+	&.badgescount-4 .sd-content > ul > li {
+		width: 25%
+	}
+
+	&.badgescount-5 .sd-content > ul > li {
+		width: 20%
+	}
+
+	&.badgescount-6 .sd-content > ul > li {
+		width: 16.66%
+	}
+
+	&.badgescount-7 .sd-content > ul > li {
+		width: 14.285%
+	}
+
+	&.badgescount-8 .sd-content > ul > li {
+		width: 12.5%
+	}
+
+}
+
+/**
+* ----------------------------------------------------------------------
+* JetPack Like Widget
+*/
+
+
+.jetpack-likes-widget-wrapper {
+	margin-top: -1px;
+	padding: 2em 2em 1.75em;
+	border: 1px solid $ui-border-color;
+	background:$ui-color-lightgrey!important;
+	// @include border-radius( $global-radius $global-radius 0 0);
+
+	.sd-title {
+		display: inline-block!important;
+	}
+}
+
+.jetpack-likes-widget { // iframe
+	// width: 100%;
+	// height: auto;
+}
+
+
+/**
+ * ----------------------------------------------------------------------
+ * JetPack Comment form subscription checkboxes
+ */
+
+.comment-subscription-form {
+	position: relative;
+	font-size: 90%;
+	opacity: .5;
+	padding-top: 10px!important;
+
+	@include transition(all 0.3s ease-in-out);
+
+	&:hover {
+		opacity: 1;
+	}
+
+	input {
+		position: absolute;
+		margin-top: emCalc(6px);
+		margin-left: emCalc(5px);
+		font-size: 16px;
+	}
+
+	label {
+		display: inline-block!important;
+		padding-left: 2.25em;
+	}
+}
+

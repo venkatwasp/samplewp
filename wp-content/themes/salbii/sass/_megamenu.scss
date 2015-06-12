@@ -1,0 +1,43 @@
+/*!
+MegaMenu styling
+ */
+body {
+
+	.megamenu-parent:not(.skin-white) > .megamenu-sub-menu,
+	.megamenu-parent:not(.skin-white) > .megamenu-sub-menu .megamenu-inner-sub-menu {
+		/* Disable some styling for dropdowns */
+		background: #33363C;
+		color: #B3B3B3;
+	}
+
+	/* Submenu panel line color ( moved to custmized-css.php )*/
+	// .megamenu-parent:hover > .megamenu-sub-menu {
+	// 	border-top: solid 4px #5AA3BF;
+	// }
+
+	/* Triangle color for megamenu parent  ( moved to custmized-css.php ) */
+	// .megamenu-parent:hover:after {
+	// 	border-color: transparent transparent #5AA3BF;
+	// }
+
+	.megamenu-parent:hover > .megamenu-sub-menu {
+
+		input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], 
+		input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], 
+		input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+			border: 2px solid rgba(0, 0, 0, 0.125);
+			background-color: rgba(0, 0, 0, 0.15);
+			color: #EBEBEB;
+
+			// &:focus {
+			// 	border-color: #5AA3BF; ( moved to custmized-css.php )
+			// }
+		}
+
+	}
+
+	.header-layout-2 .megamenu-sub-menu {
+	   text-align: left;
+	}
+
+}

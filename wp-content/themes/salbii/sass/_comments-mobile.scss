@@ -1,0 +1,180 @@
+/**
+ * ----------------------------------------------------------------------
+ * Comments area (Mobile first)
+ */
+
+.comments-section {
+	margin-top: emCalc(60px);
+}
+
+.comments-title {
+	margin-bottom: emCalc(40px);
+}
+
+.comment {
+	position: relative;
+	padding: emCalc(30px) 0;
+
+
+	footer {
+		margin: 14px 0;
+		@include clearfix;
+
+		* {
+			font-style: normal;
+			font-weight: normal;
+		}
+	}
+
+	.reply {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.says {
+		display: none;
+	}
+}
+
+.comment-meta {
+	opacity: .4;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.comment-content {
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	padding: 1em;
+	margin-bottom: 3em;
+	@include border-radius(2px);
+
+	font-size: emCalc(12px);
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+	&:before {
+		display: block;
+		width: 0;
+		height: 0;
+		content: "";
+		position: absolute;
+		left: 5%;
+		top: -6px;
+		width: 12px;
+		height: 12px;
+		background-color: $ui-bg-color;
+		border: 1px solid rgba(0,0,0,.1);
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		border-right: 0;
+		border-bottom: 0;
+	}
+}
+
+.comment-list {
+	margin-bottom: emCalc(60px);
+
+	& > .comment,
+	& > .comment .comment,
+	& > .pingback {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+}
+
+.comment-author {
+	display: block;
+	margin-right: 1em;
+
+	img {
+		margin: 0 1em 0 0;
+	}
+
+	.fn, .fn a {
+		font-size: emCalc(18px);
+		font-weight: bold;
+	}
+}
+
+.comment-author, .comment-meta {
+	a {
+		color: $body-font-color;
+	}
+}
+
+.comment-author, .comment-meta, .comment .reply {
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+	font-size: emCalc(12px);
+}
+
+.comment-form {
+
+}
+
+.customized-comment-form #comment {
+	min-height: emCalc(110px);
+	@include transition(all 0.6s ease-in-out);
+
+	&:focus {
+		min-height: emCalc(140px);
+	}
+}
+
+// REQUIRED:.bypostauthor css class is needed in your theme css.
+
+.bypostauthor .comment-content {
+	border-color: black;
+}
+
+
+// Your email address will not be published
+.comment-notes {
+	text-align: left; // mobile
+	font-size: 80%;
+	margin-bottom: emCalc(40px);
+	margin-top: 0; // mobile
+	opacity: .4;
+}
+
+// You may use these HTML tags and attributes:
+.form-allowed-tags {
+	// hidden by default
+	max-height: 0;
+	opacity: 0;
+	padding: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	font-size: 80%;
+	border: 1px dashed rgba(0, 0, 0, 0.07);
+
+	@include transition(all 0.6s ease-in-out);
+
+	&.show {
+		max-height: 200px;
+		opacity: 1;
+		padding: 20px;
+	}
+}
+
+// Trying to align comment submit line with other parts of the form
+.comment-form {
+	.comment-submit-line {
+		margin: 0 -0.5em;
+	}
+	.comment-submit-line .columns, .comment-submit-line .wpb_column {
+		padding: 0 0.5em;
+	}
+}

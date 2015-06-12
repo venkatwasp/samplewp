@@ -1,0 +1,12 @@
+/*
+* Styles to use in the WP Visual Editor
+*/
+
+/*  Make Visual Editor background grey, so white colored text for design sections can be visible */
+
+body {
+	background-color: #F3F3F3;
+	box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1) inset;
+	padding: 20px;
+	margin: 0;
+}

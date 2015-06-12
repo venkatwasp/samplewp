@@ -1,0 +1,388 @@
+/*!
+Visual Composer Components styling
+Desktop
+ */
+body {
+
+	/**
+	* ----------------------------------------------------------------------
+	* Elements carousel
+	* For desktop arrow are placed outside
+	*/
+
+	.vc_elements_carousel {
+		.wpb_tab {
+			display: none;
+			// opacity: 0;
+			@include transition(opacity 2.7s );
+		}
+
+		.wpb_tab:first-child {
+			display: block;
+		}
+
+		// left / right control
+		.wpb_tour_next_prev_nav {
+
+			a {
+				opacity: 0;
+			}
+
+			.wpb_prev_slide {
+				left: -100px;
+			}
+
+			.wpb_next_slide {
+				right: -100px;
+			}
+		}
+
+		&:hover .wpb_tour_next_prev_nav {
+			.wpb_prev_slide {
+				left: -60px;
+			}
+
+			.wpb_next_slide {
+				right: -60px;
+			}
+
+			a {
+				opacity: 1;
+			}
+		}
+	}
+
+
+	/**
+	* ----------------------------------------------------------------------
+	* Tour
+	*/
+
+	.wpb_tour {
+		.wpb_tour_tabs_wrapper .wpb_tabs_nav {
+			a {
+				border-right: none;
+			}
+
+			.ui-tabs-active {
+				margin-right: -1px;
+			}
+		}
+	}
+
+	/**
+	* ----------------------------------------------------------------------
+	* VC Call to action button
+	*/
+
+	.cta_align_left .wpb_call_text,
+	.cta_align_right .wpb_call_text {
+		width: 70%;
+	}
+
+	.cta_no_button  {
+		&.cta_align_left .wpb_call_text,
+		&.cta_align_right .wpb_call_text {
+			width: 100%;
+		}
+	}
+
+	.cta_align_right {
+		text-align: left;
+
+		.button {
+			right: $column-gutter;
+			position: absolute;
+			margin-top: 0;
+		}
+	}
+
+	.cta_align_left {
+		text-align: left;
+
+		.button {
+			left: $column-gutter;
+			position: absolute;
+			margin-top: 0;
+		}
+	}
+
+	.wpb_call_heading {
+		margin-bottom: .25em!important; // VC has badly composed selector, so we have to use !important here
+	}
+
+	.wpb_call_content {
+		// font-size: 85%;
+		opacity: .7;
+	}
+
+
+	/**
+	* ----------------------------------------------------------------------
+	* Pricing Table
+	*/
+
+	.pricingtable-column, .pricingtable-features-column {
+		margin-bottom: 60px;
+	}
+
+	/**
+	* ----------------------------------------------------------------------
+	* Posts Slider
+	*/
+
+	.wpb_posts_slider {
+		img {
+			margin-bottom: 0;
+		}
+
+		.wpb_gallery_slides {
+			margin-bottom: 10px;
+		}
+	}
+
+	.wpb_posts_slider .flex-caption, .wpb_posts_slider .nivo-caption {
+		background:transparent;
+		padding-left: 0;
+		margin-left: 0;
+	}
+
+	/**
+	* ----------------------------------------------------------------------
+	* Teaser Grid
+	*/
+
+	.wpb_grid .wpb_thumbnails-fluid > .vc_span6,
+	.wpb_filtered_grid .wpb_thumbnails-fluid > .vc_span6 {
+		width: 50%;
+	}
+
+	.wpb_grid .wpb_thumbnails-fluid > .vc_span4,
+	.wpb_filtered_grid .wpb_thumbnails-fluid > .vc_span4 {
+		width: 33.3%;
+	}
+
+	.wpb_grid .wpb_thumbnails-fluid > .vc_span3,
+	.wpb_filtered_grid .wpb_thumbnails-fluid > .vc_span3 {
+		width: 24.9%;
+
+		&:nth-child(4) {
+			padding: 0;
+		}
+	}
+
+	.wpb_teaser_grid {
+
+		// .isotope-item {
+		// 	padding: 0 16px 16px 0;
+		// }
+
+		img {
+			margin-bottom: 0;
+			// width: 100%;
+		}
+
+		.isotope-item {
+			display: block;
+		}
+
+		.post-title {
+			font-size: emCalc(21px);
+		}
+
+		.post-thumb {
+			background:none;
+		}
+
+		// .entry-content {
+		// 	font-size: emCalc(14px);
+		// }
+
+		.post-thumb + .post-title {
+			margin-top: 0;
+		}
+
+		// 1 column grid
+		&.columns_count_1 {
+			.post-thumb {
+				float: left;
+				margin-right: $column-gutter;
+				margin-bottom: 1em;
+			}
+			.entry-content {
+				// font-size: emCalc(12px);
+			}
+		}
+
+		// 2 columns grid
+		&.columns_count_2 {
+			.post-thumb {
+				margin-bottom: 1em;
+			}
+
+			.wpb_thumbnails {
+				margin-left: $column-gutter / -2;
+				margin-right: $column-gutter / -2;
+			}
+
+			.isotope-item {
+				padding-right: $column-gutter / 2;
+
+				&:nth-child(even) {
+					// padding-right: 0;
+					// padding-left: $column-gutter / 2;
+					padding-right: $column-gutter / 2;
+					padding-left: $column-gutter / 2;
+				}
+			}
+
+			.entry-content {
+				font-size: emCalc(14px);
+			}
+		}
+
+		// 3 columns grid
+		&.columns_count_3 {
+			.post-thumb {
+				margin-bottom: 1em;
+			}
+
+			.wpb_thumbnails {
+				margin-left: $column-gutter / -2;
+				margin-right: $column-gutter / -2;
+			}
+
+			.isotope-item {
+				padding-right: $column-gutter / 2;
+				padding-left: $column-gutter / 2;
+
+				&:nth-child(3n+1) { // every fourth starting from 0
+					// padding-left: 0;
+				}
+				&:nth-child(3) {
+					// padding-right: 0;
+					padding-right: $column-gutter / 2;
+					padding-left: $column-gutter / 2;
+				}
+			}
+
+			.entry-content {
+				font-size: emCalc(14px);
+			}
+		}
+
+		// 4 columns grid
+		&.columns_count_4 {
+			.post-thumb {
+				margin-bottom: 1em;
+			}
+
+			.post-title {
+				font-size: emCalc(16px);
+			}
+
+			.wpb_thumbnails {
+				margin-left: $column-gutter / -2;
+				margin-right: $column-gutter / -2;
+			}
+
+			.isotope-item {
+				padding-right: $column-gutter / 2;
+				padding-left: $column-gutter / 2;
+
+				&:nth-child(4n+1) { // every fourth starting from 0
+					// padding-left: 0;
+				}
+
+				&:nth-child(4) {
+					// padding-right: 0;
+					padding-right: $column-gutter / 2;
+					padding-left: $column-gutter / 2;
+				}
+			}
+
+			.entry-content {
+				font-size: emCalc(12px);
+			}
+		}
+
+		&.grid_layout-title_thumbnail_text {
+			.post-title {
+				margin-bottom: emCalc(24px);
+			}
+		}
+	}
+
+
+	// Teasers Carousel
+
+	.wpb_teaser_grid.wpb_carousel {
+		.vc_span12 {
+		    width: 100%;
+		}
+
+		.vc_span6 {
+		    width: 48.75%;
+		}
+
+		.vc_span4 {
+		    width: 31.6667%;
+		}
+
+		.vc_span3 {
+		    width: 23.125%;
+		}
+	}
+
+
+	/**
+	* ----------------------------------------------------------------------
+	* Portfolio Projects & Blog Masonry Posts Grid
+	*/
+
+	#global-container .masonry-grid {
+
+		// Grids spacing: 4 columns
+		&.columns_count_4 {
+			.isotope-item {
+				width: 24.9%;
+			}
+		}
+
+		// Grids spacing: 3 columns
+		&.columns_count_3 {
+			.isotope-item {
+				width: 33.32%;
+			}
+		}
+
+		// Grids spacing: 2 columns
+		&.columns_count_2 {
+			.isotope-item {
+				width: 49.5%;
+			}
+		}
+
+	} // body #global-container .masonry-grid
+
+
+	/**
+	* ----------------------------------------------------------------------
+	* Out of the box (design sections)
+	*/
+
+	.design-section {
+		 &.mobile-bg-image-separate {
+		 	.design-section-hellper {
+		 		margin-bottom: 0;
+		 		// background:none;
+		 		position: absolute;
+
+		 		img {
+					display: none;
+				}
+		 	}
+		 }
+	}
+
+}

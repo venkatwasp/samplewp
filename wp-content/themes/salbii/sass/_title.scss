@@ -1,0 +1,21 @@
+/**
+* ----------------------------------------------------------------------
+* Page title area
+*/
+
+.page-title__primary-title {
+	margin-bottom: .75em;
+}
+
+.page-title__breadcrumbs {
+	margin-top: 2.15em;
+	width: 35%;
+
+	& > * {
+		float: none;
+	}
+}
+
+.page-titile__single {
+	margin-bottom: emCalc(30px);
+}

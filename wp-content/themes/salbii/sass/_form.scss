@@ -1,0 +1,104 @@
+/**
+ * ----------------------------------------------------------------------
+ * Custom Form Elements Styling
+ */
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+	// @include box-shadow(none);
+	// @include box-shadow(0 1px 6px rgba(0, 0, 0, 0.05) inset);
+	@include border-radius($global-radius);
+	// @include emCalc(18px);
+
+	// &:focus {
+	// 	// color: $white;
+	// 	// border-bottom-color: darken($primaryColor,5%);    // overrided using theme options panel
+	// 	outline: none;
+	// }
+}
+
+textarea {
+	height: auto;
+}
+
+button, 
+button:hover,
+button:focus,
+.button,
+.button:hover,
+.button:focus,
+button.disabled,
+button[disabled],
+.button.disabled,
+.button[disabled] {
+    background-color: #cccccc;
+    border-color: #cccccc;
+}
+
+
+/**
+* ----------------------------------------------------------------------
+* Contact form 7
+*/
+
+.wpcf7-form-control-wrap {
+	// @include clearfix;
+	display: block;
+}
+
+
+.wpcf7-list-item-label {
+	margin-left: 10px;
+}
+
+.wpcf7-form-control + .wpcf7-not-valid-tip {
+	top: auto;
+	left: 0;
+	@include border-radius(0 0 6px 6px);
+	margin-top: -26px;
+	width: 100%;
+	background:red;
+	color: #fff;
+	border: none;
+	font-weight: bolder;
+	text-transform: uppercase;
+	padding-left: 8px;
+
+	font-size: 10px;
+	letter-spacing: 1px;
+}
+
+.megamenu-parent .wpcf7-form-control + .wpcf7-not-valid-tip {
+	margin-top: 6px;
+	line-height: 12px;
+}
+
+.wpcf7-response-output.wpcf7-validation-errors {
+	@include border-radius(6px);
+	background:#FF8500;
+	color: #fff;
+	border: none;
+	padding-left: 10px;
+
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.wpcf7-response-output.wpcf7-mail-sent-ok {
+	@include border-radius(6px);
+	background: #398F14;
+	color: #fff;
+	border: none;
+	padding-left: 10px;
+	margin-left: 0;
+	margin-right: 0;
+}

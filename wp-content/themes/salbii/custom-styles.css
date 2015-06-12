@@ -1,0 +1,10 @@
+/*
+Put your custom CSS styles here, if you don't like to use "Theme Options > Advaced" panel.
+! Don't forget that this file gets overrided on each theme update, so you need to keep a copy of it outside /salbii/ folder.
+! Use '#global-container' before your seletor to override our styles
+*/
+
+
+#global-container .class-needed {
+	/* your code here */
+}

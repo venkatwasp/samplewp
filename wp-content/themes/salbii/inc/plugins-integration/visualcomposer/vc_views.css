@@ -1,0 +1,79 @@
+.wpb_vc_iconbox.wpb_content_element > .wpb_element_wrapper,
+.wpb_vc_pricing_table.wpb_content_element > .wpb_element_wrapper,
+.wpb_vc_pricing_option.wpb_content_element > .wpb_element_wrapper,
+.wpb_vc_price_block > .wpb_element_wrapper,
+.wpb_vc_pricing_plan_feature > .wpb_element_wrapper,
+.wpb_vc_elements_carousel > .wpb_element_wrapper
+{
+    background-image: none;
+    padding-left: 15px;
+    height: auto;
+    border: 1px dashed #c0c0c0;
+}
+
+.wpb_vc_iconbox.wpb_content_element .wpb_element_wrapper .wpb_column_container,
+.wpb_vc_pricing_table.wpb_content_element .wpb_element_wrapper .wpb_column_container,
+.wpb_vc_pricing_option.wpb_content_element .wpb_element_wrapper .wpb_column_container
+{
+    padding: 10px 4px;
+}
+
+.wpb_vc_iconbox.wpb_content_element > div.controls,
+.wpb_vc_pricing_table.wpb_content_element > div.controls,
+.wpb_vc_pricing_option.wpb_content_element > div.controls
+{
+    text-align: right;
+}
+
+.wpb_vc_iconbox > .bottom-controls
+{
+    display: none
+}
+
+.wpb_vc_iconbox > .controls_column .column_edit,
+.wpb_vc_pricing_table > .controls_column .column_edit,
+.wpb_vc_pricing_option > .controls_column .column_edit
+{
+    background-image: url("../../../../../plugins/js_composer/assets/vc/edit.png");
+}
+.wpb_vc_iconbox > .controls_column .column_add,
+.wpb_vc_pricing_table > .controls_column .column_add,
+.wpb_vc_pricing_option > .controls_column .column_add
+{
+
+    background-image: url("../../../../../plugins/js_composer/assets/vc/add.png");
+}
+
+.wpb_vc_iconbox > .controls_column .column_add
+{
+    display: none;
+}
+
+.wpb_vc_iconbox > .controls_column .column_clone,
+.wpb_vc_pricing_table > .controls_column .column_clone,
+.wpb_vc_pricing_option > .controls_column .column_clone
+{
+    background-image: url("../../../../../plugins/js_composer/assets/vc/clone.png");
+}
+.wpb_vc_iconbox > .controls_column .column_delete,
+.wpb_vc_pricing_table > .controls_column .column_delete,
+.wpb_vc_pricing_option > .controls_column .column_delete
+{
+    background-image: url("../../../../../plugins/js_composer/assets/vc/remove.png");
+}
+
+.wpb_vc_iconbox > .controls_column a,
+.wpb_vc_pricing_table > .controls_column a,
+.wpb_vc_pricing_option > .controls_column a
+{
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    margin-left: 3px;
+    width: 12px;
+}
+
+.controls.controls_column.bottom-controls{
+    clear: both;
+}

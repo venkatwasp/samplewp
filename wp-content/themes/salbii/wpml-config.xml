@@ -1,0 +1,75 @@
+<wpml-config>
+	<admin-texts>
+		<key name="lbmn_theme_settings">
+			<key name="lbmn_logo_text" />
+			<key name="lbmn_header_additional_text" />
+			<key name="lbmn_toppanel_text_left" />
+			<key name="lbmn_toppanel_text_right" />
+			<key name="lbmn_calltoaction_title" />
+			<key name="lbmn_calltoaction_button_text" />
+			<key name="lbmn_footer_copyrights_left" />
+			<key name="lbmn_footer_copyrights_right" />
+		</key>
+	</admin-texts>
+	<custom-fields>
+		<custom-field action="copy">blog_design</custom-field>
+		<custom-field action="copy">blog_layout</custom-field>
+		<custom-field action="copy">enclosure</custom-field>
+		<custom-field action="copy">essb_hidefb</custom-field>
+		<custom-field action="copy">essb_hidepinfollow</custom-field>
+		<custom-field action="copy">essb_hideplusone</custom-field>
+		<custom-field action="copy">essb_hidetwitter</custom-field>
+		<custom-field action="copy">essb_hidevk</custom-field>
+		<custom-field action="copy">essb_hideyoutube</custom-field>
+		<custom-field action="copy">essb_off</custom-field>
+		<custom-field action="copy">lbmn_page_design_settings</custom-field>
+		<custom-field action="copy">lbmn_page_title_settings</custom-field>
+		<custom-field action="copy">lbmn_project_page_template</custom-field>
+		<custom-field action="translate">lbmn_secondary_page_title</custom-field>
+		<custom-field action="copy">lumberman_title_bgimage_effects</custom-field>
+		<custom-field action="copy">sharing_disabled</custom-field>
+		<custom-field action="copy">switch_like_status</custom-field>
+		<custom-field action="copy">vc_teaser</custom-field>
+		<custom-field action="copy">_additional_settings</custom-field>
+		<custom-field action="copy">_dp_original</custom-field>
+		<custom-field action="copy">_edit_last</custom-field>
+		<custom-field action="copy">_edit_lock</custom-field>
+		<custom-field action="copy">_form</custom-field>
+		<custom-field action="copy">_locale</custom-field>
+		<custom-field action="copy">_mail</custom-field>
+		<custom-field action="copy">_mail_2</custom-field>
+		<custom-field action="copy">_menu_item_classes</custom-field>
+		<custom-field action="copy">_menu_item_menu_item_parent</custom-field>
+		<custom-field action="copy">_menu_item_object</custom-field>
+		<custom-field action="copy">_menu_item_object_id</custom-field>
+		<custom-field action="copy">_menu_item_target</custom-field>
+		<custom-field action="copy">_menu_item_tfingi_megamenu_description</custom-field>
+		<custom-field action="copy">_menu_item_tfingi_megamenu_type</custom-field>
+		<custom-field action="copy">_menu_item_type</custom-field>
+		<custom-field action="copy">_menu_item_url</custom-field>
+		<custom-field action="copy">_menu_item_xfn</custom-field>
+		<custom-field action="copy">_messages</custom-field>
+		<custom-field action="copy">_nectar_love</custom-field>
+		<custom-field action="copy">_post_restored_from</custom-field>
+		<custom-field action="copy">_thumbnail_id</custom-field>
+		<custom-field action="copy">_wpas_done_all</custom-field>
+		<custom-field action="copy">_wpb_post_custom_css</custom-field>
+		<custom-field action="copy">_wpb_vc_js_interface_version</custom-field>
+		<custom-field action="copy">_wpb_vc_js_status</custom-field>
+		<custom-field action="copy">_wp_attached_file</custom-field>
+		<custom-field action="copy">_wp_attachment_backup_sizes</custom-field>
+		<custom-field action="copy">_wp_attachment_image_alt</custom-field>
+		<custom-field action="copy">_wp_attachment_metadata</custom-field>
+		<custom-field action="copy">_wp_old_slug</custom-field>
+		<custom-field action="copy">_wp_page_template</custom-field>
+	</custom-fields>
+	<custom-types>
+		<custom-type translate="1">lbmn_project</custom-type>
+		<custom-type translate="1">wpcf7_contact_form</custom-type>
+		<custom-type translate="1">sidebar</custom-type>
+	</custom-types>
+	<taxonimies>
+		<taxonomy translate="1">lbmn_project_type</taxonomy>
+		<taxonomy translate="1">lbmn_project_attribute</taxonomy>
+	</taxonomies>
+</wpml-config>

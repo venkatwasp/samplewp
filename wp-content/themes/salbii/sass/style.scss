@@ -1,0 +1,1412 @@
+/*!
+Theme Name: Salbii
+Theme URI: http://www.salbii.com/
+Author: Tfingi
+Author URI: http://themeforest.net/user/Tfingi
+Description: This is Salbii. A responsive multipurpose theme.
+Version: 2.5
+License: GNU General Public License
+License URI: license.txt
+Tags: light, one-column, two-columns, left-sidebar, right-sidebar, flexible-width, custom-colors, custom-menu, featured-images, full-width-template, post-formats, theme-options, threaded-comments, translation-ready
+*/
+
+/**!
+ * Theme designed and developed by Vladimir Mitcovschi (vladimir@twindots.com) for Twin Dots Limited
+ * based on _s theme by Automattic and custom code libraries by Vladimir Mitcovschi for Twin Dots Limited
+ * Distributed on ThemeForest under GNU General Public License
+ */
+
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+@import "_custom-settings";
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+
+@mixin icon-font {
+	font-family: 'iconfont';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+@mixin emptyPseudoElement {
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+} 
+
+@mixin row-border-top {
+	position: relative;
+
+	&:before {
+		position: absolute;
+		display: block!important;
+		content: '';
+		left: $column-gutter/2;
+		right: $column-gutter/2;
+		top: 0;
+		height: 1px;
+
+		border-top: 1px solid $ui-border-color;
+	}
+}
+
+@mixin hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+// make sure empty columns don't collapse
+.columns, .wpb_column {
+	min-height: 1px;
+}
+
+// but we don't want 1px empty line for empty 12 columns
+.columns.large-12, .wpb_column.vc_col-sm-12 {
+	min-height: 0;
+}
+
+.clearfix {
+	@include pie-clearfix;
+}
+
+html,body
+{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+// if wpadmin panel activated
+body.admin-bar {
+	.fixed {
+		top: 28px;
+	}
+}
+
+// link hover transition effect
+a {
+	@include transition(color .3s ease-in-out, opacity .3s ease-in-out);
+}
+
+// Global :hover color
+a:hover, a:focus {
+	color: $body-font-color-hover;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	@include border-radius(3px);
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+
+
+/**
+* ----------------------------------------------------------------------
+* Typography
+*/
+
+body {
+	line-height: $paragraph-line-height;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h0, .h1, .h2, .h3, .h4, .h5, .h6 {
+	line-height: 1.25; // I don't like standard Foundation's line-height in ems
+}
+
+// h1, h2 {
+// 	font-weight: 100;
+// }
+
+@function emCalcWithBase($pxWidth, $pxBase) {
+	@return $pxWidth / $pxBase * 1em;
+}
+
+
+
+.h0 { font-size: $h0-font-size-mobile; }
+h1, .h1 { font-size: $h1-font-size-mobile; }
+h2, .h2 { font-size: $h2-font-size-mobile; }
+h3, .h3 { font-size: $h3-font-size-mobile; }
+h4, .h4 { font-size: $h4-font-size-mobile; }
+h5, .h5 { font-size: $h5-font-size-mobile; }
+h6, .h6 { font-size: $h6-font-size-mobile; }
+
+h2 {
+	.h0 { font-size: emCalcWithBase($h0-font-size-mobile, $h2-font-size-mobile); }
+	.h1 { font-size: emCalcWithBase($h1-font-size-mobile, $h2-font-size-mobile); }
+	.h2 { font-size: emCalcWithBase($h2-font-size-mobile, $h2-font-size-mobile); }
+	.h3 { font-size: emCalcWithBase($h3-font-size-mobile, $h2-font-size-mobile); }
+	.h4 { font-size: emCalcWithBase($h4-font-size-mobile, $h2-font-size-mobile); }
+	.h5 { font-size: emCalcWithBase($h5-font-size-mobile, $h2-font-size-mobile); }
+	.h6 { font-size: emCalcWithBase($h6-font-size-mobile, $h2-font-size-mobile); }
+}
+
+h3 {
+	.h0 { font-size: emCalcWithBase($h0-font-size-mobile, $h3-font-size-mobile); }
+	.h1 { font-size: emCalcWithBase($h1-font-size-mobile, $h3-font-size-mobile); }
+	.h2 { font-size: emCalcWithBase($h2-font-size-mobile, $h3-font-size-mobile); }
+	.h3 { font-size: emCalcWithBase($h3-font-size-mobile, $h3-font-size-mobile); }
+	.h4 { font-size: emCalcWithBase($h4-font-size-mobile, $h3-font-size-mobile); }
+	.h5 { font-size: emCalcWithBase($h5-font-size-mobile, $h3-font-size-mobile); }
+	.h6 { font-size: emCalcWithBase($h6-font-size-mobile, $h3-font-size-mobile); }
+}
+
+h4 {
+	.h0 { font-size: emCalcWithBase($h0-font-size-mobile, $h4-font-size-mobile); }
+	.h1 { font-size: emCalcWithBase($h1-font-size-mobile, $h4-font-size-mobile); }
+	.h2 { font-size: emCalcWithBase($h2-font-size-mobile, $h4-font-size-mobile); }
+	.h3 { font-size: emCalcWithBase($h3-font-size-mobile, $h4-font-size-mobile); }
+	.h4 { font-size: emCalcWithBase($h4-font-size-mobile, $h4-font-size-mobile); }
+	.h5 { font-size: emCalcWithBase($h5-font-size-mobile, $h4-font-size-mobile); }
+	.h6 { font-size: emCalcWithBase($h6-font-size-mobile, $h4-font-size-mobile); }
+}
+
+h5 {
+	.h0 { font-size: emCalcWithBase($h0-font-size-mobile, $h5-font-size-mobile); }
+	.h1 { font-size: emCalcWithBase($h1-font-size-mobile, $h5-font-size-mobile); }
+	.h2 { font-size: emCalcWithBase($h2-font-size-mobile, $h5-font-size-mobile); }
+	.h3 { font-size: emCalcWithBase($h3-font-size-mobile, $h5-font-size-mobile); }
+	.h4 { font-size: emCalcWithBase($h4-font-size-mobile, $h5-font-size-mobile); }
+	.h5 { font-size: emCalcWithBase($h5-font-size-mobile, $h5-font-size-mobile); }
+	.h6 { font-size: emCalcWithBase($h6-font-size-mobile, $h5-font-size-mobile); }
+}
+
+h6 {
+	.h0 { font-size: emCalcWithBase($h0-font-size-mobile, $h6-font-size-mobile); }
+	.h1 { font-size: emCalcWithBase($h1-font-size-mobile, $h6-font-size-mobile); }
+	.h2 { font-size: emCalcWithBase($h2-font-size-mobile, $h6-font-size-mobile); }
+	.h3 { font-size: emCalcWithBase($h3-font-size-mobile, $h6-font-size-mobile); }
+	.h4 { font-size: emCalcWithBase($h4-font-size-mobile, $h6-font-size-mobile); }
+	.h5 { font-size: emCalcWithBase($h5-font-size-mobile, $h6-font-size-mobile); }
+	.h6 { font-size: emCalcWithBase($h6-font-size-mobile, $h6-font-size-mobile); }
+}
+
+/* Apply default paragraph styles in the cases when <p> can be missed by Visual Editor */
+.wpb_text_column {
+  font-family: $paragraph-font-family;
+  font-weight: $paragraph-font-weight;
+  font-size: $paragraph-font-size;
+  line-height: $paragraph-line-height;
+  margin-bottom: $paragraph-margin-bottom;
+  text-rendering: $paragraph-text-rendering;
+}
+
+.wpb_column > .wpb_wrapper > .wpb_content_element.wpb_text_column:last-child {
+	margin-bottom: 35px; 
+}
+
+.larger {
+	font-size: 125%;
+	font-weight: 300;
+	display: inline-block; // line-height doesn't change without this
+}
+
+.smaller {
+	font-size: 90%;
+	display: inline-block; // line-height doesn't change without this
+}
+
+.lighter {
+	font-weight: 300;
+}
+
+.light {
+	font-weight: 300;
+}
+
+.thin {
+	font-weight: 200;
+}
+
+.normal {
+	font-weight: normal;
+}
+
+.bolder {
+	font-weight: bolder;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.uppercase {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.mb_0 {
+	margin-bottom: 0;
+}
+
+.mt_0 {
+	margin-top: 0;
+}
+
+
+/**
+* ----------------------------------------------------------------------
+* Predefined margins - mobile first
+*/
+
+body #global-container {
+	.margin-top_0px 	{ margin-top: 0px;		}
+	.margin-top_5px 	{ margin-top: 5px;		}
+	.margin-top_-5px 	{ margin-top: -5px;		}
+	.margin-top_10px 	{ margin-top: 10px;		}
+	.margin-top_-10px 	{ margin-top: -10px;	}
+	.margin-top_15px 	{ margin-top: 15px;		}
+	.margin-top_-15px 	{ margin-top: -15px;	}
+	.margin-top_20px 	{ margin-top: 20px;		}
+	.margin-top_-20px 	{ margin-top: -20px;	}
+	.margin-top_25px 	{ margin-top: 25px;		}
+	.margin-top_-25px 	{ margin-top: -25px;	}
+	.margin-top_30px 	{ margin-top: 30px;		}
+	.margin-top_-30px 	{ margin-top: -30px;	}
+	.margin-top_35px 	{ margin-top: 35px;		}
+	.margin-top_-35px 	{ margin-top: -35px;	}
+	.margin-top_40px 	{ margin-top: 40px;		}
+	.margin-top_-40px 	{ margin-top: -40px;	}
+	.margin-top_45px 	{ margin-top: 45px;		}
+	.margin-top_-45px 	{ margin-top: -45px;	}
+	.margin-top_50px 	{ margin-top: 50px;		}
+	.margin-top_-50px 	{ margin-top: -50px;	}
+	.margin-top_55px 	{ margin-top: 55px;		}
+	.margin-top_-55px 	{ margin-top: -55px;	}
+	.margin-top_60px 	{ margin-top: 60px;		}
+	.margin-top_-60px 	{ margin-top: -60px;	}
+	.margin-top_65px 	{ margin-top: 65px;		}
+	.margin-top_-65px 	{ margin-top: -65px;	}
+	.margin-top_70px 	{ margin-top: 70px;		}
+	.margin-top_-70px 	{ margin-top: -70px;	}
+	.margin-top_75px 	{ margin-top: 75px;		}
+	.margin-top_-75px 	{ margin-top: -75px;	}
+	.margin-top_80px 	{ margin-top: 80px;		}
+	.margin-top_-80px 	{ margin-top: -80px;	}
+	.margin-top_85px 	{ margin-top: 85px;		}
+	.margin-top_-85px 	{ margin-top: -85px;	}
+	.margin-top_90px 	{ margin-top: 90px;		}
+	.margin-top_-90px 	{ margin-top: -90px;	}
+	.margin-top_95px 	{ margin-top: 95px;		}
+	.margin-top_-95px 	{ margin-top: -95px;	}
+	.margin-top_100px 	{ margin-top: 100px;	}
+	.margin-top_-100px 	{ margin-top: -100px;	}
+
+	.margin-top_150px 	{ margin-top: 150px;	}
+	.margin-top_-150px 	{ margin-top: -150px;	}
+	.margin-top_200px 	{ margin-top: 200px;	}
+	.margin-top_-200px 	{ margin-top: -200px;	}
+	.margin-top_250px 	{ margin-top: 250px;	}
+	.margin-top_-250px 	{ margin-top: -250px;	}
+
+
+	// RIGHT
+
+	.margin-right_0px 	{ margin-right: 0px;		}
+	.margin-right_5px 	{ margin-right: 5px;		}
+	.margin-right_-5px 	{ margin-right: -5px;		}
+	.margin-right_10px 	{ margin-right: 10px;		}
+	.margin-right_-10px { margin-right: -10px;		}
+	.margin-right_15px 	{ margin-right: 15px;		}
+	.margin-right_-15px { margin-right: -15px;		}
+	.margin-right_20px 	{ margin-right: 20px;		}
+	.margin-right_-20px { margin-right: -20px;		}
+	.margin-right_25px 	{ margin-right: 25px;		}
+	.margin-right_-25px { margin-right: -25px;		}
+	.margin-right_30px 	{ margin-right: 30px;		}
+	.margin-right_-30px { margin-right: -30px;		}
+	.margin-right_35px 	{ margin-right: 35px;		}
+	.margin-right_-35px { margin-right: -35px;		}
+	.margin-right_40px 	{ margin-right: 40px;		}
+	.margin-right_-40px { margin-right: -40px;		}
+	.margin-right_45px 	{ margin-right: 45px;		}
+	.margin-right_-45px { margin-right: -45px;		}
+	.margin-right_50px 	{ margin-right: 50px;		}
+	.margin-right_-50px { margin-right: -50px;		}
+	.margin-right_55px 	{ margin-right: 55px;		}
+	.margin-right_-55px { margin-right: -55px;		}
+	.margin-right_60px 	{ margin-right: 60px;		}
+	.margin-right_-60px { margin-right: -60px;		}
+	.margin-right_65px 	{ margin-right: 65px;		}
+	.margin-right_-65px { margin-right: -65px;		}
+	.margin-right_70px 	{ margin-right: 70px;		}
+	.margin-right_-70px { margin-right: -70px;		}
+	.margin-right_75px 	{ margin-right: 75px;		}
+	.margin-right_-75px { margin-right: -75px;		}
+	.margin-right_80px 	{ margin-right: 80px;		}
+	.margin-right_-80px { margin-right: -80px;		}
+	.margin-right_85px 	{ margin-right: 85px;		}
+	.margin-right_-85px { margin-right: -85px;		}
+	.margin-right_90px 	{ margin-right: 90px;		}
+	.margin-right_-90px { margin-right: -90px;		}
+	.margin-right_95px 	{ margin-right: 95px;		}
+	.margin-right_-95px 	{ margin-right: -95px;	}
+	.margin-right_100px 	{ margin-right: 100px;	}
+	.margin-right_-100px 	{ margin-right: -100px;	}
+
+	.margin-right_150px 	{ margin-right: 150px;	}
+	.margin-right_-150px 	{ margin-right: -150px;	}
+	.margin-right_200px 	{ margin-right: 200px;	}
+	.margin-right_-200px 	{ margin-right: -200px;	}
+	.margin-right_250px 	{ margin-right: 250px;	}
+	.margin-right_-250px 	{ margin-right: -250px;	}
+
+	// BOTTOM
+
+	.margin-bottom_0px 	{ margin-bottom: 0px;		}
+	.margin-bottom_5px 	{ margin-bottom: 5px;		}
+	.margin-bottom_-5px 	{ margin-bottom: -5px;		}
+	.margin-bottom_10px 	{ margin-bottom: 10px;		}
+	.margin-bottom_-10px 	{ margin-bottom: -10px;		}
+	.margin-bottom_15px 	{ margin-bottom: 15px;		}
+	.margin-bottom_-15px 	{ margin-bottom: -15px;		}
+	.margin-bottom_20px 	{ margin-bottom: 20px;		}
+	.margin-bottom_-20px 	{ margin-bottom: -20px;		}
+	.margin-bottom_25px 	{ margin-bottom: 25px;		}
+	.margin-bottom_-25px 	{ margin-bottom: -25px;		}
+	.margin-bottom_30px 	{ margin-bottom: 30px;		}
+	.margin-bottom_-30px 	{ margin-bottom: -30px;		}
+	.margin-bottom_35px 	{ margin-bottom: 35px;		}
+	.margin-bottom_-35px 	{ margin-bottom: -35px;		}
+	.margin-bottom_40px 	{ margin-bottom: 40px;		}
+	.margin-bottom_-40px 	{ margin-bottom: -40px;		}
+	.margin-bottom_45px 	{ margin-bottom: 45px;		}
+	.margin-bottom_-45px 	{ margin-bottom: -45px;		}
+	.margin-bottom_50px 	{ margin-bottom: 50px;		}
+	.margin-bottom_-50px 	{ margin-bottom: -50px;		}
+	.margin-bottom_55px 	{ margin-bottom: 55px;		}
+	.margin-bottom_-55px 	{ margin-bottom: -55px;		}
+	.margin-bottom_60px 	{ margin-bottom: 60px;		}
+	.margin-bottom_-60px 	{ margin-bottom: -60px;		}
+	.margin-bottom_65px 	{ margin-bottom: 65px;		}
+	.margin-bottom_-65px 	{ margin-bottom: -65px;		}
+	.margin-bottom_70px 	{ margin-bottom: 70px;		}
+	.margin-bottom_-70px 	{ margin-bottom: -70px;		}
+	.margin-bottom_75px 	{ margin-bottom: 75px;		}
+	.margin-bottom_-75px 	{ margin-bottom: -75px;		}
+	.margin-bottom_80px 	{ margin-bottom: 80px;		}
+	.margin-bottom_-80px 	{ margin-bottom: -80px;		}
+	.margin-bottom_85px 	{ margin-bottom: 85px;		}
+	.margin-bottom_-85px 	{ margin-bottom: -85px;		}
+	.margin-bottom_90px 	{ margin-bottom: 90px;		}
+	.margin-bottom_-90px 	{ margin-bottom: -90px;		}
+	.margin-bottom_95px 	{ margin-bottom: 95px;		}
+	.margin-bottom_-95px 	{ margin-bottom: -95px;		}
+	.margin-bottom_100px 	{ margin-bottom: 100px;		}
+	.margin-bottom_-100px 	{ margin-bottom: -100px;	}
+
+	.margin-bottom_150px 	{ margin-bottom: 150px;		}
+	.margin-bottom_-150px 	{ margin-bottom: -150px;	}
+	.margin-bottom_200px 	{ margin-bottom: 200px;		}
+	.margin-bottom_-200px 	{ margin-bottom: -200px;	}
+	.margin-bottom_250px 	{ margin-bottom: 250px;		}
+	.margin-bottom_-250px 	{ margin-bottom: -250px;	}
+
+	// LEFT
+
+	.margin-left_0px 	{ margin-left: 0px;		}
+	.margin-left_5px 	{ margin-left: 5px;		}
+	.margin-left_-5px 	{ margin-left: -5px;		}
+	.margin-left_10px 	{ margin-left: 10px;		}
+	.margin-left_-10px 	{ margin-left: -10px;	}
+	.margin-left_15px 	{ margin-left: 15px;		}
+	.margin-left_-15px 	{ margin-left: -15px;	}
+	.margin-left_20px 	{ margin-left: 20px;		}
+	.margin-left_-20px 	{ margin-left: -20px;	}
+	.margin-left_25px 	{ margin-left: 25px;		}
+	.margin-left_-25px 	{ margin-left: -25px;	}
+	.margin-left_30px 	{ margin-left: 30px;		}
+	.margin-left_-30px 	{ margin-left: -30px;	}
+	.margin-left_35px 	{ margin-left: 35px;		}
+	.margin-left_-35px 	{ margin-left: -35px;	}
+	.margin-left_40px 	{ margin-left: 40px;		}
+	.margin-left_-40px 	{ margin-left: -40px;	}
+	.margin-left_45px 	{ margin-left: 45px;		}
+	.margin-left_-45px 	{ margin-left: -45px;	}
+	.margin-left_50px 	{ margin-left: 50px;		}
+	.margin-left_-50px 	{ margin-left: -50px;	}
+	.margin-left_55px 	{ margin-left: 55px;		}
+	.margin-left_-55px 	{ margin-left: -55px;	}
+	.margin-left_60px 	{ margin-left: 60px;		}
+	.margin-left_-60px 	{ margin-left: -60px;	}
+	.margin-left_65px 	{ margin-left: 65px;		}
+	.margin-left_-65px 	{ margin-left: -65px;	}
+	.margin-left_70px 	{ margin-left: 70px;		}
+	.margin-left_-70px 	{ margin-left: -70px;	}
+	.margin-left_75px 	{ margin-left: 75px;		}
+	.margin-left_-75px 	{ margin-left: -75px;	}
+	.margin-left_80px 	{ margin-left: 80px;		}
+	.margin-left_-80px 	{ margin-left: -80px;	}
+	.margin-left_85px 	{ margin-left: 85px;		}
+	.margin-left_-85px 	{ margin-left: -85px;	}
+	.margin-left_90px 	{ margin-left: 90px;		}
+	.margin-left_-90px 	{ margin-left: -90px;	}
+	.margin-left_95px 	{ margin-left: 95px;		}
+	.margin-left_-95px 	{ margin-left: -95px;	}
+	.margin-left_100px 	{ margin-left: 100px;	}
+	.margin-left_-100px 	{ margin-left: -100px;	}
+
+	.margin-left_150px 	{ margin-left: 150px;	}
+	.margin-left_-150px 	{ margin-left: -150px;	}
+	.margin-left_200px 	{ margin-left: 200px;	}
+	.margin-left_-200px 	{ margin-left: -200px;	}
+	.margin-left_250px 	{ margin-left: 250px;	}
+	.margin-left_-250px 	{ margin-left: -250px;	}
+}
+
+
+
+// List styling
+
+.page-column-content,
+.page-column-sidebar {
+	ul.list-arrow {
+		list-style: none;
+
+		li {
+			position: relative;
+
+			&:before {
+				display: inline-block;
+				margin-right: 3px;
+				vertical-align: middle;
+				@include icon-font;
+				content: "\e104";
+			}
+		}
+	}
+}
+
+
+/**
+* ----------------------------------------------------------------------
+* Standatd WP classes
+*/
+
+// REQUIRED:.wp-caption css class is needed in your theme css.
+.wp-caption {
+	max-width: 100%;
+}
+// REQUIRED:.wp-caption-text css class is needed in your theme css.
+.wp-caption-text, .gallery-caption {
+	font-size: 95%;
+	font-weight: 300;
+}
+// REQUIRED:.gallery-caption css class is needed in your theme css.
+// REQUIRED:.alignright css class is needed in your theme css.
+// .alignright {
+// 	text-align: right;
+// }
+// REQUIRED:.alignleft css class is needed in your theme css.
+// .alignleft {
+// 	text-align: left;
+// }
+// REQUIRED:.aligncenter css class is needed in your theme css.
+// .aligncenter {
+// 	text-align: center;
+// }
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/**
+* ----------------------------------------------------------------------
+* Images Styling
+*/
+
+.site-content {
+	img {
+		// @include border-radius($global-radius);
+		margin-bottom: emCalc(10px);
+
+		// @include box-shadow( 0 1px 0px 0 rgba(0,0,0,.2) );
+	}
+
+	a:before {
+		// border-radius: $global-radius;
+	}
+}
+
+
+
+/**
+* ----------------------------------------------------------------------
+* Content
+*/
+
+.site-main {
+	overflow: hidden;
+}
+
+
+// .entry-content__output > p:first-child {
+// 	font-size: 21px; // TODO: apply all these rules to .lead ;
+// 	font-weight: 300;
+// 	padding-bottom: 50px;
+// 	margin-bottom: 50px;
+// 	color: darken($body-font-color, 20%);
+// 	// opacity: 0.6;
+// 	border-bottom: 1px solid rgba($primary-color,.3); // TODO: move to skin;
+// }
+
+.site-content {
+	padding-top: emCalc(60px);
+	padding-bottom: emCalc(60px);
+}
+
+.archive .site-content {
+	padding-top: 0;
+}
+
+.content__no-top-padding .site-content,
+.content__no-top-padding .page-column-content,
+.content__no-top-padding .page-column-sidebar {
+	padding-top: 0;
+}
+
+.content__no-bottom-padding .site-content,
+.content__no-bottom-padding .page-column-content,
+.content__no-bottom-padding .page-column-sidebar {
+	padding-bottom: 0;
+}
+
+// Search page
+
+.searchpage-searchform {
+	padding-bottom: 1.5em;
+  padding-top: 3em;
+}
+
+.error404 .searchform {
+	margin-bottom: 60px;
+}
+
+/**
+* ----------------------------------------------------------------------
+* Sidebars
+*/
+
+.page-column-sidebar__right {
+}
+
+.page-column-sidebar__left {
+}
+
+.sidebar-on-left {
+	padding-right: $column-gutter;
+}
+
+.sidebar-on-right {
+	padding-right: $column-gutter;
+}
+
+
+/**
+* ----------------------------------------------------------------------
+* Plugins Style Improvement: Easy Social Share Buttons
+*/
+
+/*
+.essb_links {
+
+	.essb_counter,
+	.essb_totalcount,
+	.essb_counter_right {
+		@include box-shadow (none);
+	}
+
+	&.essb_template_metro {
+		// Balance verticaly buttons with counters
+		// when social network name is vissible
+		.essb_item a {
+			line-height: 22px; //26px;
+		}
+
+		// Balance verticaly buttons with counters
+		// when social network name isn't vissible
+		.essb_hide_name .essb_item a {
+			line-height: 15px;
+		}
+
+		.essb_totalcount {
+			margin-top: 0px;
+		}
+
+		// Make social counter buttons styled with rounded corners
+		// the same way as counters styled
+		.essb_counter, .essb_totalcount {
+			margin-right: -2px;
+			@include border-radius(0);
+		}
+
+		.essb_links .essb_item a {
+			@include border-radius(3px);
+		}
+
+		.essb_links_list:not(.essb_hide_name) .essb_counter {
+			padding-top: 6px;
+			padding-bottom: 7px;
+		}
+	}
+
+	&.essb_template_default {
+		.essb_item a,
+		.essb_item .essb_totalcount {
+			@include background-image (none);
+			@include box-shadow (none);
+			background:transparent;
+			vertical-align: top;
+		}
+
+		.essb_counter, .essb_totalcount {
+			background: #E6E6E6;
+
+			&:after {
+				top: 47%;
+				border-left-color: #E6E6E6;
+			}
+		}
+	}
+
+	&.essb_template_modern {
+		.essb_item a,
+		.essb_item .essb_totalcount {
+			@include background-image (none);
+			@include box-shadow (none);
+		}
+
+		.essb_counter, .essb_totalcount {
+			padding: 5px 6px 3px;
+		}
+	}
+
+	&.essb_template_round {
+		.essb_item a,
+		.essb_item .essb_totalcount {
+			@include background-image (none);
+			@include box-shadow (none);
+			border: 1px solid transparent;
+		}
+
+		.essb_hide_name a:hover .essb_network_name,
+		.essb_hide_name a:focus .essb_network_name {
+			margin-left: 6px;
+		}
+	}
+
+	&.essb_template_big {
+		.essb_item a,
+		.essb_item .essb_totalcount {
+			@include background-image (none);
+			@include box-shadow (none);
+			border: 1px solid transparent;
+		}
+
+		.essb_counter, .essb_totalcount {
+			margin-right: -2px;
+			padding: 9px 5px 7px;
+		}
+	}
+}
+
+.essb_message_above_share {
+	margin-bottom: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 75%;
+}
+
+// Make sure floating panel goes over content but below floating header
+.essb_fixed {
+	z-index: 10;
+}
+
+.essb_displayed_sidebar {
+	top: 320px;
+	left: 50px;
+
+	.essb_counter {
+		position: absolute;
+
+		right: 100%;
+
+		width: auto !important;
+		min-width: 31px !important;
+		text-align: center;
+		max-width: 56px !important;
+	}
+
+	.essb_item {
+		// text-align: right;
+	}
+
+	.essb_item a {
+		// padding-top: 3px;
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	.essb_displayed_sidebar {
+		left: 7%;
+	}
+}
+
+*/
+
+
+.essb_displayed_bottom {
+	margin-top: 40px;
+}
+
+
+
+.essb_template_light-retina {
+	margin-left: -12px;
+}
+
+
+@import "_header-mobile"; // header styles - mobile first
+@import "_title-mobile"; // import website title styles
+@import "_jetpack"; // import jetpack plugin widgets customization styles
+@import "_blog"; // import website blog styles
+@import "_blog-post"; // blog posts styling
+@import "_blog-standard-mobile"; // satndard blog section desgin
+@import "_blog-masonry-mobile"; // masonry blog section design
+@import "_comments-mobile"; // import website comments styles
+@import "_widgets"; // import sidebar widgets styles
+@import "_footer-mobile"; // import website footer styles
+@import "_form"; // custom design for form elements
+@import "_megamenu.scss"; //mega menu styling
+
+@import "_vc-components-mobile";
+
+/**
+* ----------------------------------------------------------------------
+* Custom Media Queries
+*/
+@import "custom-media-queries";
+
+/*
+ * Some custom fixes
+ */
+
+
+ /*Scroll to top button*/
+ a.scroll-to-top{
+   display: block;
+   width: 40px;
+   height: 40px;
+   position: fixed;
+   bottom: -40px;
+   right: 20px;
+   background-color: rgba(0, 0, 0, 0.4);
+   border-radius: 2px;
+   z-index: 10000;
+   transition: all .4s ease-in-out;
+     -webkit-transition: all .4s ease-in-out;
+     -moz-transition: all .4s ease-in-out;
+     -ms-transition: all .4s ease-in-out;
+     -o-transition: all .4s ease-in-out;
+ }
+ /*a.scroll-to-top:hover{
+   background-color: rgba(0, 0, 0, 0.7);
+ }*/
+ a.scroll-to-top.active{
+   bottom: 20px;
+ }
+ a.scroll-to-top .icon-arrow-up-4,
+ a.scroll-to-top .icon-arrow-up-4:before{
+   width: 100%;
+   height: 100%;
+   display: block;
+   color: #fff;
+   font-size: 1.7em;
+   line-height: 1em;
+ }
+
+/*Fix for parallax issue, when background diappeared*/
+.off-canvas-wrap, .inner-wrap, nav.tab-bar, .left-off-canvas-menu, .left-off-canvas-menu *, .right-off-canvas-menu, .move-right a.exit-off-canvas, .move-left a.exit-off-canvas {
+  -webkit-backface-visibility: visible; }
+
+/*Fix for off-canvas-menu in IE9*/
+.csstransforms.no-csstransforms3d .left-off-canvas-menu {
+  -webkit-transform: translate(-100%, 0);
+  -moz-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0);
+  -o-transform: translate(-100%, 0);
+  transform: translate(-100%, 0); }
+.csstransforms.no-csstransforms3d .right-off-canvas-menu {
+  -webkit-transform: translate(100%, 0);
+  -moz-transform: translate(100%, 0);
+  -ms-transform: translate(100%, 0);
+  -o-transform: translate(100%, 0);
+  transform: translate(100%, 0); }
+.csstransforms.no-csstransforms3d .move-left > .inner-wrap {
+  -webkit-transform: translate(-240px, 0);
+  -moz-transform: translate(-240px, 0);
+  -ms-transform: translate(-240px, 0);
+  -o-transform: translate(-240px, 0);
+  transform: translate(-240px, 0); }
+.csstransforms.no-csstransforms3d .move-right > .inner-wrap {
+  -webkit-transform: translate(240px, 0);
+  -moz-transform: translate(240px, 0);
+  -ms-transform: translate(240px, 0);
+  -o-transform: translate(240px, 0);
+  transform: translate(240px, 0); }
+
+.no-csstransforms .left-off-canvas-menu {
+  left: -240px; }
+.no-csstransforms .right-off-canvas-menu {
+  right: -240px; }
+.no-csstransforms .move-left > .inner-wrap {
+  right: 240px; }
+.no-csstransforms .move-right > .inner-wrap {
+  left: 240px; }
+
+/*Styles for overlay for close with mobile menu*/
+.move-right .exit-off-canvas {
+  -webkit-backface-visibility: hidden;
+  transition: background 300ms ease;
+  cursor: pointer;
+  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1002;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+  @media only screen and (min-width: 40.063em) {
+    .move-right .exit-off-canvas:hover {
+      background: rgba(255, 255, 255, 0.05); } }
+      .move-left .exit-off-canvas {
+  -webkit-backface-visibility: hidden;
+  transition: background 300ms ease;
+  cursor: pointer;
+  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1002;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+  @media only screen and (min-width: 40.063em) {
+    .move-left .exit-off-canvas:hover {
+      background: rgba(255, 255, 255, 0.05); } }
+
+
+
+
+
+/*Off-canvas menu. Close button. Show text*/
+.icon-cross{
+  float: right;
+  margin:0;
+}
+.close-offcanvas a > span{
+  display: block;
+  float: left;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+.theme-default a.nivo-nextNav{
+    width: 32px !important;
+}
+
+.upb_video-bg{
+    height: 101% !important;
+}
+
+
+
+/* bootstrap 3 responsive */
+
+@-ms-viewport {
+  width: device-width;
+}
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  .visible-xs {
+    display: block !important;
+  }
+  table.visible-xs {
+    display: table;
+  }
+  tr.visible-xs {
+    display: table-row !important;
+  }
+  th.visible-xs,
+  td.visible-xs {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm {
+    display: block !important;
+  }
+  table.visible-sm {
+    display: table;
+  }
+  tr.visible-sm {
+    display: table-row !important;
+  }
+  th.visible-sm,
+  td.visible-sm {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md {
+    display: block !important;
+  }
+  table.visible-md {
+    display: table;
+  }
+  tr.visible-md {
+    display: table-row !important;
+  }
+  th.visible-md,
+  td.visible-md {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-lg {
+    display: block !important;
+  }
+  table.visible-lg {
+    display: table;
+  }
+  tr.visible-lg {
+    display: table-row !important;
+  }
+  th.visible-lg,
+  td.visible-lg {
+    display: table-cell !important;
+  }
+}
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+.visible-print {
+  display: none !important;
+}
+@media print {
+  .visible-print {
+    display: block !important;
+  }
+  table.visible-print {
+    display: table;
+  }
+  tr.visible-print {
+    display: table-row !important;
+  }
+  th.visible-print,
+  td.visible-print {
+    display: table-cell !important;
+  }
+}
+@media print {
+  .hidden-print {
+    display: none !important;
+  }
+}
+/* END of bootstrap3 responsive */
+
+.site-header.animated.fixedDesktop {
+    position: fixed;
+    z-index: 50;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.site-header .header_layout_1.animated {
+    position: fixed;
+    z-index: 50;
+    right: auto !important;
+    left: auto !important;
+    top: 0;
+}
+section.top-bar-section.animated {
+    position: fixed;
+    z-index: 50;
+    left: auto !important;
+    right: auto;
+    top: 0;
+}
+
+@media (max-width: 991px){
+    *:not(.slideOutUp) {
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        /*    -o-transform: none !important;
+            -moz-transform: none !important;
+            -ms-transform: none !important;
+            -webkit-transform: none !important;
+            transform: none !important;*/
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+}
+
+.wpb_gallery_slides.wpb_flexslider.flexslider_fade{
+    height: auto !important;
+}
+
+
+.off-canvas-wrap.move-left aside.right-off-canvas-menu{
+    display:block;
+}
+
+.off-canvas-wrap aside.right-off-canvas-menu{
+    display: none;
+}
+
+
+.banner-block img {
+  margin-bottom: 0;
+}
+
+/* Visual Addons fix for custom-height interactive banner fix */
+#content .banner-block.banner-block-custom-height img {
+  width:100%;
+}
+
+/*header.headerSticky.animated .header-layout-1.headertop > .top-bar{
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}*/
+
+header.headerSticky.animated .header-logo img{
+    /*height: 40px;*/
+    width: auto;
+}
+
+/* minimal CSS */
+ #popout-menu {
+    position: fixed;                /* fix the popout to the left side of the screen */
+    top: 250px;
+    left: -227px;                    /* use a negative margin to pull the icon area of the popout off the edge of the page */
+    width: 250px;
+    z-index: 1000;
+    color: #f1f1f1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#popout-menu .menu{
+    width:217px;
+    background-color: #262626;
+}
+
+#popout-menu .trigger {                          /* create a clickable area that triggers the slide in/out effect */
+    position: absolute;             /* position clickable area to consume entire right section of popout (add a border if you want to see for yourself) */
+    top: 0;
+    bottom: 0;
+    right: -20px;
+    cursor: pointer;
+}
+
+#popout-menu .menu > ul > li{
+    border-bottom: 1px solid #3d3d3d;
+    margin: 0;
+    padding: 10px 0 10px 20px;
+}
+
+#popout-menu .menu a:visited, #popout-menu .menu a:link{
+    color: #acacac;
+}
+
+#popout-menu .menu a.active:visited, #popout-menu .menu a.active:link{
+    color: #f1f1f1;
+}
+
+#popout-menu .menu a:hover{
+    color: #f1f1f1;
+}
+
+#popout-menu .menu > ul > li:last-child{
+    border-bottom: none;
+
+}
+
+#popout-menu .menu ul {
+    list-style: none;
+    padding: 0 0 0 0;
+}
+#popout-menu .menu ul > a {
+    display: block;
+}
+#popout-menu .menu ul ul {
+    list-style: none;
+    padding: 0 0 0 0;
+}
+#popout-menu .menu ul ul{
+    display: none;
+    margin: 0;
+    margin-top: 15px;
+}
+#popout-menu .menu ul ul li {
+    font-weight: normal;
+    cursor: auto;
+
+}
+#popout-menu .menu ul ul a {
+    text-decoration: none;
+}
+#popout-menu .menu ul ul a:hover {
+    text-decoration: none;
+}
+
+/* thumbnails section */
+
+#popout-menu .menu ul ul.thumbs {
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 5px;
+}
+
+#popout-menu .menu ul ul.thumbs li {
+	float: left;
+	margin-right: 6px;
+}
+
+#popout-menu .menu ul ul.thumbs li a {
+	border-width: 1px;
+	border-style: solid;
+	overflow: hidden;
+}
+
+#popout-menu .menu ul ul.thumbs li a img {
+	background: #fff;
+}
+
+#popout-menu .menu ul ul.thumbs li a.pattern {
+	width: 36px;
+	height: 36px;
+	background-position: top left;
+	text-indent: -1000px;
+}
+
+body.patt .main-section{
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+body.patt1 .main-section {
+    background-image: url('/wp-content/themes/salbii/images/wp-admin/layout-backgrounds/bg1.png');
+}
+
+body.patt2 .main-section {
+    background-image: url('/wp-content/themes/salbii/images/wp-admin/layout-backgrounds/bg2.png');
+}
+
+body.patt3 .main-section {
+    background-image: url('/wp-content/themes/salbii/images/wp-admin/layout-backgrounds/bg3.png');
+}
+
+body.patt4 .main-section {
+    background-image: url('/wp-content/themes/salbii/images/wp-admin/layout-backgrounds/bg4.png');
+}
+
+body.patt5 .main-section {
+    background-image: url('/wp-content/themes/salbii/images/wp-admin/layout-backgrounds/bg5.png');
+}
+
+body.patt6 .main-section {
+    background-image: url('/wp-content/themes/salbii/images/wp-admin/layout-backgrounds/bg6.png');
+}
+
+body.patt7 .main-section {
+    background-image: url('/wp-content/themes/salbii/images/wp-admin/layout-backgrounds/bg7.png');
+}
+
+body.patt8 .main-section {
+    background-image: url('/wp-content/themes/salbii/images/wp-admin/layout-backgrounds/bg8.png');
+}
+
+body.patt9 .main-section {
+    background-image: url('/wp-content/themes/salbii/images/wp-admin/layout-backgrounds/bg9.png');
+}
+
+body.patt10 .main-section {
+    background-image: url('/wp-content/themes/salbii/images/wp-admin/layout-backgrounds/bg10.png');
+}
+
+body.patt11 .main-section {
+    background-image: url('/wp-content/themes/salbii/images/wp-admin/layout-backgrounds/bg11.png');
+}
+
+body.patt12 .main-section {
+    background-image: url('/wp-content/themes/salbii/images/wp-admin/layout-backgrounds/bg12.png');
+}
+
+body.img .main-section{
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+}
+
+body.img1 .main-section {
+    background-image: url('/wp-content/themes/salbii/images/wp-admin/layout-backgrounds/bgimg1.jpg');
+}
+
+body.img2 .main-section {
+    background-image: url('/wp-content/themes/salbii/images/wp-admin/layout-backgrounds/bgimg2.jpg');
+}
+
+body.img3 .main-section {
+    background-image: url('/wp-content/themes/salbii/images/wp-admin/layout-backgrounds/bgimg3.jpg');
+}
+
+header.site-header div.header-layout{
+    display:none;
+    visibility: hidden;
+}
+
+body.header-1 header.site-header .header_layout_1, body.header-2 header.site-header .header_layout_2, body.header-3 header.site-header .header_layout_3{
+    display: table;
+    width: 100%;
+    visibility: visible;
+}
+
+.wpb_video_widget .wpb_wrapper .wpb_video_wrapper {
+	padding-top: 0 !important;
+}
+
+//v.2.2 Additions
+body.header-1 header.site-header .header_layout_1, body.header-2 header.site-header .header_layout_2, body.header-3 header.site-header .header_layout_3 {
+	-webkit-backface-visibility: hidden; //Chrome rendering bugfix
+}
+
+@media only screen and (max-width: 768px) {
+	.wpb_teaser_grid_lbmn_project img  {
+		margin-bottom: 0;
+		width: 100%;
+	}
+
+	.wpb_teaser_grid_lbmn_project .isotope-item  {
+		margin-right: 5%;
+		clear: both;
+		width: 40%;
+	}
+}

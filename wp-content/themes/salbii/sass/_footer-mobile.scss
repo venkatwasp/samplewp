@@ -1,0 +1,177 @@
+/**
+ * ----------------------------------------------------------------------
+ * Pre-footer Call to action
+ */
+
+$calltoactionarea-bg-color: darken($body-bg,10%);
+$calltoactionarea-font-color: $body-font-color;
+
+.calltoaction-area {
+	text-align: center;
+	padding-top: emCalc(40px);
+	padding-bottom: emCalc(40px);
+
+	background-color: $calltoactionarea-bg-color; // TODO: move to _skin.scss;
+}
+
+.calltoaction-area__button {
+	margin: 2em 0 0;
+	padding: 0.5em 1em!important;
+}
+
+.calltoaction-area__title, .calltoaction-area__subtitle {
+	margin: 0;
+	color: $calltoactionarea-font-color; // TODO: move to _skin.scss;
+}
+
+.calltoaction-area__title {
+	font-size: $h2-font-size - emCalc(5px);
+	line-height: 1.25;
+
+	small {
+		line-height: 1;
+		opacity: .75;
+	}
+}
+
+.calltoaction-area__subtitle {
+	opacity: .7;
+}
+
+
+/**
+ * ----------------------------------------------------------------------
+ * Footer
+ */
+
+$footer-bg-color: #33363c;
+$footer-title-color: #b8bcc3;
+$footer-font-color: #B3B3B3;
+$footer-link-color: #fefefe;
+$footer-menu-color: #b8bcc3;
+
+.site-footer {
+	background: $footer-bg-color;
+	color: $footer-font-color;
+	padding-top: 40px;
+	padding-bottom: 30px;
+
+	.textwidget {
+		font-size: emCalc(14px);
+		line-height: $paragraph-line-height;
+	}
+
+	a, .side-nav li a {
+		color: $footer-link-color;
+	}
+
+	li a {
+		display: inline-block;
+	}
+}
+
+// Footer menu styles
+.site-footer__menu {
+	margin-top: -40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: rgba(0,0,0,.1);
+
+	.dropdown { // dropdowns disabled
+		display: none;
+	}
+
+	.top-bar-section ul.menu li {
+		&.active > a {
+			color: lighten($footer-menu-color,20%) !important;
+		}
+
+		& > a {
+			color: $footer-menu-color;
+			font-size: emCalc(15px);
+			margin-right: 1.25em;
+
+			&:hover {
+				color: lighten($footer-menu-color,20%);
+			}
+		}
+	}
+
+	.top-bar-section .has-dropdown > a {
+		padding-right: inherit!important;
+	}
+
+	.top-bar-section .has-dropdown > a:after {
+		display: none;
+	}
+}
+
+.site-footer__primary {
+	padding-top: 40px;
+}
+
+.site-footer__copyrights {
+	/*background: $footer-bg-color; //background: darken($footer-bg-color,5%);*/
+	padding-top: 30px;
+	opacity: .6;
+
+	.columns, .wpb_column {
+		font-size: emCalc(12px);
+	}
+}
+
+.site-footer .widget-title {
+	color: $footer-title-color; // TODO: move to _skin.scss;
+	position: relative;
+}
+
+/**
+ * ----------------------------------------------------------------------
+ * Footer Widgets
+ */
+
+.site-footer {
+
+	.widget {
+		margin-bottom: emCalc(40px);
+	}
+
+	 .widget_recent_comments,
+	 .widget_archive,
+	 .widget_recent_entries,
+	 .widget_categories,
+	 .widget_meta {
+	 	ul li > a {
+			font-size: emCalc(18px);
+	 	}
+	 }
+
+	/* Rotating Tweets plugin widget */
+	.widget_rotatingtweets_widget {
+		.rtw_main {
+			font-size: emCalc(16px);
+			line-height: 1.4;
+			font-weight: 300;
+		}
+
+		.rtw_meta {
+			margin-top: 20px;
+			opacity: 0.3;
+			font-size: emCalc(12px);
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+
+	input[type="text"], input[type="password"], input[type="date"], 
+	input[type="datetime"], input[type="datetime-local"], input[type="month"], 
+	input[type="week"], input[type="email"], input[type="number"], input[type="search"], 
+	input[type="tel"], input[type="time"], input[type="url"], textarea {
+		background-color: rgba(0, 0, 0, 0.15);
+		color: #EBEBEB;
+	}
+
+
+ }

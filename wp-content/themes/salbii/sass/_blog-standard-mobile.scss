@@ -1,0 +1,183 @@
+/**
+ * ----------------------------------------------------------------------
+ * Blog section - Standard design (Mobile first)
+ */
+
+body.blog,
+body.archive,
+body.search {
+	// hide divider line on the bottom of the latest teaser
+	.hentry.design-standard:last-child:after {
+		display: none;
+	}
+
+	// Show posts divider for blog home with activated sidebar
+	.hentry {
+		border-bottom: 1px solid $ui-border-color;
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+}
+
+#global-container .no-sidebar .hentry {
+	border-bottom: none;
+}
+
+
+// Post teaser design standard
+
+.no-sidebar .hentry.design-standard {
+	position: relative;
+
+	// divider line on the bottom of each teaser
+	&:after {
+		content: "";
+		position: absolute;
+		left: -100%;
+		right: -100%;
+		bottom: 0;
+		height: 1px;
+		background: $ui-border-color;
+	}
+}
+
+.hentry.design-standard {
+
+	padding-top: emCalc(40px); // mobile
+	padding-bottom: emCalc(40px); // mobile
+
+	.post-format-icon {
+		position: absolute;
+		display: inline-block;
+		margin-top: 0.25em;
+		font-size: 1.75em; // mobile
+		opacity: .4;
+		left: 5px; // mobile
+	}
+
+	.entry-summary > p:first-child,
+	.entry-content > p:first-child {
+		font-size: 125%;
+		font-weight: 300;
+	}
+
+	.cat-links {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		opacity: .7;
+		font-size: emCalc(13px);
+	}
+
+	.entry-featured-img {
+		margin-top: emCalc(24px);
+		margin-bottom: emCalc(30px);
+		max-height: 250px;
+		overflow: hidden;
+	}
+
+	.entry-meta {
+		margin-top: emCalc(40px);
+
+		.byline, .call-to-comment {
+			font-size: emCalc(14px);
+			opacity: .7;
+
+			// &:hover {
+			// 	opacity: 1;
+			// }
+
+			.fn {
+				font-size: 100%;
+			}
+		}
+
+		.call-to-comment {
+			display: inline-block;
+			margin-left: 1.5em;
+		}
+	}
+}
+
+
+// Format type icons for standard blog layout
+
+.blog-style-standard {
+	.format-standard {
+		.post-format-icon:before {
+				content: "\e00f"; // icon-outlined-pen
+		}
+	}
+
+	.post.sticky {
+		.post-format-icon:before {
+				content: "\e023"; // icon-outlined-megaphone
+				opacity: 1;
+				color: #F81454; // red color
+		}
+	}
+
+	.format-chat {
+		.post-format-icon:before {
+				content: "\e014"; // Comment icon
+		}
+	}
+
+	.format-status {
+		.post-format-icon:before {
+				content: "\e00e"; // Bulb icon
+		}
+	}
+
+	.format-quote {
+		.post-format-icon:before {
+				content: "\e029"; // Bulb icon
+		}
+	}
+
+	.format-link {
+		.post-format-icon:before {
+				content: "\e02f"; // Globe icon
+		}
+	}
+
+	.format-video {
+		.post-format-icon:before {
+				content: "\e005"; // Video icon
+		}
+	}
+
+	.format-audio {
+		.post-format-icon:before {
+				content: "\e022"; // Music icon
+		}
+	}
+
+	.format-image {
+		.post-format-icon:before {
+				content: "\e01b"; // Image icon
+		}
+	}
+
+	.format-aside {
+		.post-format-icon:before {
+				content: "\e01c"; // Note icon
+		}
+	}
+}
+
+
+// Video/Audio post-format
+
+.format-standard .entry-featured-img,
+.format-video .entry-featured-img,
+.format-audio .entry-featured-img,
+.format-image .entry-featured-img {
+	height: auto!important;
+}
+.format-standard .entry-featured-img img,
+.format-image .entry-featured-img img,
+.format-gallery .entry-featured-img img {
+	width: 100%;
+}

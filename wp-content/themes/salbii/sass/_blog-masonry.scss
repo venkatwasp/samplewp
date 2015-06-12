@@ -1,0 +1,76 @@
+/**
+ * ----------------------------------------------------------------------
+ * Blog section - Masonry design
+ * See _vc-components.scss for masonry styling (project grid)
+ * Desktop
+ */
+
+
+ // Featured  Masonry Layout Post
+ .featured-post .isotope-item {
+
+ 	.post-thumb, .content-part.colored-card-part {
+ 		position: absolute;
+ 		width: 50%;
+ 	}
+
+ 	.content-part {
+ 		float: right;
+ 		width: 43%;
+ 		margin-top: 3em;
+ 	}
+
+ 	// .content-part + .content-part {
+ 	// 	margin-top: 72px;
+ 	// }
+
+	// Special stling for aside content-fromat
+	&.post-format {
+		.content-part {
+			width: 33%;
+		}
+
+		.colored-card-part {
+			width: 66%;
+			float: left;
+			padding-bottom: 13em;
+			margin-bottom: -10em;
+		}
+	}
+
+	.post-title {
+		font-size: $h2-font-size;
+	}
+
+	// ===================
+
+	&.format-audio {
+		.colored-card-part {
+			position: absolute;
+		}
+	}
+
+	.mejs-container {
+		position: absolute;
+		margin-top: 14px;
+	}
+
+	&.format-video, &.format-gallery, &.format-image {
+		.colored-card-part {
+			padding-bottom: 10em;
+		}
+	}
+
+}
+
+.blog-masonry.sidebar-on-right,
+.blog-masonry.sidebar-on-right + .page-column-sidebar,
+.blog-masonry.page-column-sidebar__left,
+.blog-masonry.page-column-sidebar__left + .page-column-content  {
+	margin-top: 40px;
+}
+
+body .blog-masonry .hentry {
+	border-bottom: none;
+}
+

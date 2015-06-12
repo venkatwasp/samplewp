@@ -1,0 +1,1756 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Salbii Theme\n"
+"POT-Creation-Date: 2014-03-14 02:52+0200\n"
+"PO-Revision-Date: 2014-03-14 02:54+0200\n"
+"Last-Translator: Tfingi <support@tfingi.com>\n"
+"Language-Team: Tfingi <support@tfingi.com>\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_nx\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:26
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "“”"
+
+#: ../404.php:30
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: ../404.php:44
+msgid "Most Used Categories"
+msgstr ""
+
+#: ../comments.php:32
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgstr ""
+
+#: ../comments.php:39 ../comments.php:59
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:40 ../comments.php:60
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:41 ../comments.php:61
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:71
+msgid "Comments are closed."
+msgstr ""
+
+#: ../comments.php:76
+msgid "Leave a Reply"
+msgstr ""
+
+#: ../comments.php:77
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: ../comments.php:78
+msgid "Cancel reply"
+msgstr ""
+
+#: ../comments.php:79
+msgid "Post Comment"
+msgstr ""
+
+#: ../comments.php:80
+msgid "Your email address will not be published."
+msgstr ""
+
+#: ../functions.php:55
+msgid "Header Primary Menu"
+msgstr ""
+
+#: ../functions.php:56
+msgid "Header Secondary Links"
+msgstr ""
+
+#: ../functions.php:57
+msgid "Footer Menu"
+msgstr ""
+
+#: ../image.php:26
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size "
+"image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" "
+"rel=\"gallery\">%8$s</a>"
+msgstr ""
+
+#: ../image.php:37 ../image.php:115 ../inc/template-tags.php:83
+#: ../inc/template-tags.php:104 ../template-parts/content-search.php:80
+msgid "Edit"
+msgstr ""
+
+#: ../image.php:41
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
+
+#: ../image.php:42
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../image.php:98 ../template-parts/content-page.php:30
+#: ../template-parts/content-search.php:39
+#: ../template-parts/content-single.php:38
+msgid "Pages:"
+msgstr ""
+
+#: ../image.php:107
+#, php-format
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+
+#: ../image.php:109
+#, php-format
+msgid ""
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
+"\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback"
+"\">Trackback URL</a>."
+msgstr ""
+
+#: ../image.php:111
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
+"\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
+
+#: ../image.php:113
+msgid "Both comments and trackbacks are currently closed."
+msgstr ""
+
+#: ../inc/bfi_thumb.php:120
+msgid ""
+"The server does not have ImageMagick or GD installed and/or enabled! Any of "
+"these libraries are required for WordPress to be able to resize images. "
+"Please contact your server administrator to enable this before continuing."
+msgstr ""
+
+#: ../inc/bfi_thumb.php:235
+msgid "Image rotate failed."
+msgstr ""
+
+#: ../inc/bfi_thumb.php:257
+msgid "Image opacity change failed."
+msgstr ""
+
+#: ../inc/bfi_thumb.php:335
+msgid "Image color change failed."
+msgstr ""
+
+#: ../inc/bfi_thumb.php:351
+msgid "Image grayscale failed."
+msgstr ""
+
+#: ../inc/bfi_thumb.php:367
+msgid "Image negate failed."
+msgstr ""
+
+#: ../inc/extras.php:115
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../inc/extras.php:192 ../inc/template-tags.php:142
+#: ../template-parts/content-search.php:48
+#: ../template-parts/content-search.php:51
+#: ../template-parts/teaser-designstandard-aside.php:24
+#: ../template-parts/teaser-designstandard-audio.php:24
+#: ../template-parts/teaser-designstandard-chat.php:24
+#: ../template-parts/teaser-designstandard-gallery.php:24
+#: ../template-parts/teaser-designstandard-image.php:24
+#: ../template-parts/teaser-designstandard-link.php:24
+#: ../template-parts/teaser-designstandard-quote.php:24
+#: ../template-parts/teaser-designstandard-standard.php:23
+#: ../template-parts/teaser-designstandard-status.php:24
+#: ../template-parts/teaser-designstandard-video.php:24
+msgid ", "
+msgstr ""
+
+#: ../inc/functions-commentform.php:35
+msgid "Name"
+msgstr ""
+
+#: ../inc/functions-commentform.php:43
+msgid "Email"
+msgstr ""
+
+#: ../inc/functions-commentform.php:52
+msgid "Website"
+msgstr ""
+
+#: ../inc/functions-ini.php:189
+msgid "Mobile Off-canvas"
+msgstr ""
+
+#: ../inc/functions-ini.php:198
+msgid "Sidebar"
+msgstr ""
+
+#: ../inc/functions-ini.php:207
+msgid "Prefooter - Column 1"
+msgstr ""
+
+#: ../inc/functions-ini.php:215
+msgid "Prefooter - Column 2"
+msgstr ""
+
+#: ../inc/functions-ini.php:223
+msgid "Prefooter - Column 3"
+msgstr ""
+
+#: ../inc/functions-ini.php:231
+msgid "Prefooter - Column 4"
+msgstr ""
+
+#: ../inc/functions-ini.php:240
+msgid "Footer - Column 1"
+msgstr ""
+
+#: ../inc/functions-ini.php:248
+msgid "Footer - Column 2"
+msgstr ""
+
+#: ../inc/functions-ini.php:256
+msgid "Footer - Column 3"
+msgstr ""
+
+#: ../inc/functions-ini.php:264
+msgid "Footer - Column 4"
+msgstr ""
+
+#: ../inc/functions-navigation.php:195
+msgid "Home"
+msgstr ""
+
+#: ../inc/functions-navigation.php:223
+#, php-format
+msgid "Category: %s"
+msgstr ""
+
+#: ../inc/functions-navigation.php:226
+#, php-format
+msgid "Tag: %s"
+msgstr ""
+
+#: ../inc/functions-navigation.php:233
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: ../inc/functions-navigation.php:241
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: ../inc/functions-navigation.php:244
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: ../inc/functions-navigation.php:247
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: ../inc/functions-navigation.php:250 ../template-parts/title-page.php:90
+msgid "Asides"
+msgstr ""
+
+#: ../inc/functions-navigation.php:253 ../template-parts/title-page.php:93
+msgid "Images"
+msgstr ""
+
+#: ../inc/functions-navigation.php:256 ../template-parts/title-page.php:96
+msgid "Videos"
+msgstr ""
+
+#: ../inc/functions-navigation.php:259 ../template-parts/title-page.php:99
+msgid "Quotes"
+msgstr ""
+
+#: ../inc/functions-navigation.php:262 ../template-parts/title-page.php:102
+msgid "Links"
+msgstr ""
+
+#: ../template-parts/title-single.php:34
+msgid "By"
+msgstr ""
+
+#: ../inc/functions-navigation.php:265 ../sidebar.php:20
+#: ../template-parts/title-page.php:105
+msgid "Archives"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:164
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:165
+msgid "Install Plugins"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:166
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:167
+msgid "Something went wrong."
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:180
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:510
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:181
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1908
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:182
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:537
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:2120
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:565
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:738
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1125
+msgid "External Link"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1130
+msgid "Private Repository"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1133
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1137
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1140
+msgid "Required"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1140
+msgid "Recommended"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1143
+msgid "Not Installed"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1145
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1147
+msgid "Not Updated"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1149
+msgid "Active"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1343
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1359
+msgid "Plugin"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1360
+msgid "Source"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1361
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:955
+msgid "Type"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1362
+msgid "Status"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1380
+msgid "Install"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1381
+msgid "Activate"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1891
+msgid "Install package not available."
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1892
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1893
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1894
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1895
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1896
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:1907
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:2017
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:2018
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:2018
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:2027
+msgid "Show Details"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:2018
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:2027
+msgid "Hide Details"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:2019
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:2020
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:2024
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:2025
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:2026
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:2027
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:2028
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../inc/plugins-integration/class-tgm-plugin-activation.php:2029
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/plugins-integration/metaboxes.php:27
+#, fuzzy
+msgid "Page Design Settings"
+msgstr "“”"
+
+#: ../inc/plugins-integration/metaboxes.php:50
+#, fuzzy
+msgid "Hide page title"
+msgstr "“”"
+
+#: ../inc/plugins-integration/metaboxes.php:55
+#, fuzzy
+msgid "Secondary page title"
+msgstr "“”"
+
+#: ../inc/plugins-integration/metaboxes.php:68
+msgid "Content margins"
+msgstr ""
+
+#: ../inc/plugins-integration/metaboxes.php:73
+msgid "Remove top spacing"
+msgstr ""
+
+#: ../inc/plugins-integration/metaboxes.php:74
+msgid "Remove bottom spacing"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/iconbox.php:10
+msgid "Iconbox"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/vc_helper_api.php:91
+msgid "Element top margin"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/vc_helper_api.php:97
+msgid "Element right margin"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/vc_helper_api.php:103
+msgid "Element bottom margin"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/vc_helper_api.php:109
+msgid "Element left margin"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:102
+msgid "Regular"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:102
+msgid "Mini"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:102
+msgid "Large"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:103
+msgid "Brand Color"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:103
+msgid "Grey"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:103
+msgid "Blue"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:103
+msgid "Turquoise"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:103
+msgid "Green"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:103
+msgid "Orange"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:103
+msgid "Red"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:103
+msgid "Black"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:103
+msgid "White"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:104
+msgid "Square Button"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:104
+msgid "Radius Button"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:104
+msgid "Round Button"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:107
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:439
+msgid "Theme default"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:109
+msgid "Hard Shadow: Square"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:110
+msgid "Hard Shadow: Radius"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:111
+msgid "Hard Shadow: Round"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:114
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:448
+msgid "Plain: Square"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:115
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:449
+msgid "Plain: Radius"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:116
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:447
+msgid "Plain: Round"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:119
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:444
+msgid "Border Only: Square"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:120
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:445
+msgid "Border Only: Radius"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:121
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:443
+msgid "Border Only: Round"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:125
+msgid "Button"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:128
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:206
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:457
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:541
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:726
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:782
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:895
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:922
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:982
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1129
+msgid "Content"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:132
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:136
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:802
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:804
+#: ../vc_templates/vc_button.php:11 ../vc_templates/vc_cta_button.php:11
+msgid "Text on the button"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:137
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:805
+msgid "Text on the button."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:141
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:517
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:809
+msgid "URL (Link)"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:143
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:811
+msgid "Button link."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:147
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:493
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:947
+msgid "Size"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:150
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:841
+msgid "Button size."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:154
+msgid "Color"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:157
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:833
+msgid "Button color."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:161
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:500
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:900
+msgid "Style"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:164
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:849
+msgid "Button visual style."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:168
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1039
+msgid "Link target"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:170
+msgid "Open link in a new tab"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:177
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:464
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:685
+msgid "Icon"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:183
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:331
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:523
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:708
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:744
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:866
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:907
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:969
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1106
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1133
+msgid "Extra class name"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:185
+msgid ""
+"If you wish to style particular content element differently, then use this "
+"field to add a css class name."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:200
+msgid "Row"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:212
+msgid "Expand section width"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:213
+msgid "Make \"out of the box\" section that expanded to the widow edges"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:225
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:347
+msgid "Background color"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:227
+msgid "Out of the box section background color."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:232
+msgid "Image"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:235
+msgid "Select image from media library."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:240
+msgid "Background image opacity"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:254
+msgid "Use it to create colored sem-transparent effects."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:259
+msgid "Horizontal background position X "
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:262
+msgid ""
+"Background image horizontal position. Can take one of the next values: left, "
+"center, right, 0% .. 100%, 0px .. 2000px .."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:267
+msgid "Vertical background position Y"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:270
+msgid ""
+"Background image vertical position. Can take one of the next values: top, "
+"center, bottom, 0% .. 100%, 0px .. 2000px .."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:275
+msgid "Background repeat"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:287
+msgid "Background size"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:290
+msgid ""
+"Background image size. Can take one of the next values: cover, contain, "
+"0% .. 100%, 0px .. 2000px .."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:295
+msgid "Background effect"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:306
+msgid "Parallax speed"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:320
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:381
+msgid "Element styling"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:333
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:525
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:710
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:746
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:868
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:909
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:971
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1108
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1135
+msgid ""
+"If you wish to style particular content element differently, then use this "
+"field to add a class name and then refer to it in your css file."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:353
+msgid "Background opacity"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:377
+msgid "Applies only when background color set."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:392
+msgid "Rounded corners"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:409
+msgid "Tab"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:417
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1094
+msgid "Title"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:419
+msgid "Tab title."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:423
+msgid "Tab ID"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:441
+msgid "Icon only"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:454
+msgid "Icon box"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:470
+msgid "Icon Color"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:476
+msgid "Badge Color"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:482
+msgid "Icon position"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:485
+msgid "Top center"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:486
+msgid "Top left"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:487
+msgid "Left"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:489
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:513
+msgid "How and where to display the icon."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:496
+msgid "Icon size."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:503
+msgid "Icson visual style."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:507
+msgid "Hover effect"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:510
+msgid "None"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:511
+msgid "Effect 1"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:519
+msgid "Icon link."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:538
+msgid "Pricing Table"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:549
+msgid "Number of plans"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:560
+msgid "How many pricing table columns to create?"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:567
+msgid "Price Block"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:578
+msgid "Plan Title"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:581
+msgid "Basic, Standard, Professional, Ultimate, etc."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:585
+msgid "Currency Symbol"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:588
+msgid "$, &pound;, &euro;, &yen;, etc."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:592
+msgid "Price"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:598
+msgid "Period"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:601
+msgid "'/mo', '/yr', '&lt;br /&gt;a month', '&lt;br /&gt;per year', etc."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:605
+msgid "Price block background color"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:611
+msgid "Price block text color"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:618
+msgid "Custom colors for plan title"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:622
+msgid "Price title background color"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:629
+msgid "Price title text color"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:637
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:674
+msgid "Description"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:644
+msgid "Make Featured"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:648
+msgid "Featured Badge Text"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:658
+msgid "Pricing Plan Feature"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:668
+msgid "Feature Title"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:681
+msgid "Show description in popup"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:697
+msgid "Text color"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:721
+msgid "Elements Carousel"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:731
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:926
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:986
+msgid "Widget title"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:733
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:928
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:988
+msgid "What text use as a widget title. Leave blank if no title is needed."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:737
+msgid "Auto rotate slides"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:739
+msgid "Disable"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:740
+msgid "Auto rotate slides each X seconds."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:757
+msgid "Slide 1"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:758
+msgid "Slide 2"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:769
+msgid "No style"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:770
+msgid "Plain: Grey"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:771
+msgid "Plain: Brand Color"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:772
+msgid "Border Only: Grey"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:773
+msgid "Border Only: Brand Color"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:774
+msgid "Hard shadow: Grey"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:775
+msgid "Hard shadow: Brand Color"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:779
+msgid "Call to Action Block"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:787
+msgid "Heading"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:789
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:797
+msgid "Click edit button to change this text."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:790
+msgid "Enter heading for call to action block."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:795
+msgid "Text"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:798
+msgid "Enter secondary text."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:815
+msgid "Button position"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:817
+msgid "Align right"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:817
+msgid "Align left"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:817
+msgid "Align bottom"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:818
+msgid "Select button alignment."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:822
+msgid "Button Target"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:825
+msgid "Where to open the linked page."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:830
+msgid "Button Color"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:838
+msgid "Button Size"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:846
+msgid "Button Style"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:853
+msgid "Block Style"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:856
+msgid "Block visual style."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:860
+msgid "Button Icon"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:882
+msgid "Thin"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:883
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:949
+msgid "Medium"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:884
+msgid "Thick"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:885
+msgid "Double"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:886
+msgid "Dotted"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:887
+msgid "Dashed"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:891
+msgid "Separator"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:903
+msgid "Select separator style."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:920
+msgid "Flickr Widget"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:932
+msgid "Flickr ID"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:935
+#, php-format
+msgid "To find your flickID visit %s."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:939
+msgid "Number of photos"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:942
+msgid "Number of photos."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:949
+msgid "Small"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:949
+msgid "Thumbnail"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:950
+msgid "Size of photos."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:957
+msgid "User"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:957
+msgid "Group"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:958
+msgid "Photo stream type."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:962
+msgid "Display"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:964
+msgid "Latest"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:964
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1094
+msgid "Random"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:965
+msgid "Photo order."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:979
+msgid "Projects Grid"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:992
+msgid "Columns count"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:996
+msgid "Select columns count."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1000
+msgid "Post types"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1002
+msgid "Select lbmn_project to display portfolio projects."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1006
+msgid "Teasers count"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1008
+msgid "How many teasers to show? Leave blank to show all."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1019
+msgid "Layout"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1021
+msgid "Title + Thumbnail + Text"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1021
+msgid "Thumbnail + Title + Text"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1021
+msgid "Thumbnail + Text"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1021
+msgid "Thumbnail + Title"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1021
+msgid "Thumbnail only"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1021
+msgid "Title + Text"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1022
+msgid "Teaser layout."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1028
+msgid "Show project category"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1032
+msgid "Link"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1034
+msgid "Link to post"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1034
+msgid "Link to bigger image"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1034
+msgid "Thumbnail to bigger image, title to post"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1034
+msgid "No link"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1035
+msgid "Link type."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1046
+msgid "Teaser grid layout"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1048
+msgid "Grid"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1048
+msgid "Grid with filter"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1049
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1057
+msgid "Teaser layout template."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1053
+msgid "Layout mode"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1055
+msgid "Fit rows"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1055
+msgid "Masonry"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1061
+msgid "Filter projects by:"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1064
+msgid "Filter projects by type or by attributes."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1074
+#, fuzzy
+msgid "Post/Page IDs"
+msgstr "“”"
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1076
+msgid ""
+"Fill this field with page/posts IDs separated by commas (,) to retrieve only "
+"them. Use this in conjunction with \"Post types\" field."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1080
+msgid "Exclude Post/Page IDs"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1082
+msgid ""
+"Fill this field with page/posts IDs separated by commas (,) to exclude them "
+"from query."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1086
+msgid "Categories"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1088
+msgid ""
+"If you want to narrow output, enter category names here. Note: Only listed "
+"categories will be included. Divide categories with linebreaks (Enter)."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1092
+msgid "Order by"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1094
+msgid "Date"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1094
+msgid "ID"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1094
+msgid "Author"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1094
+msgid "Modified"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1094
+msgid "Comment count"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1094
+msgid "Menu order"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1095
+#, php-format
+msgid "Select how to sort retrieved posts. More at %s."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1099
+msgid "Order way"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1101
+msgid "Descending"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1101
+msgid "Ascending"
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1102
+#, php-format
+msgid "Designates the ascending or descending order. More at %s."
+msgstr ""
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1126
+msgid "LBMN Slider"
+msgstr "“”"
+
+#: ../inc/plugins-integration/visualcomposer/visualcomposer.php:1139
+#, fuzzy
+msgid "Section Slider"
+msgstr "“”"
+
+#: ../inc/template-tags.php:40
+msgid "Post navigation"
+msgstr ""
+
+#: ../inc/template-tags.php:45
+msgid "Previous"
+msgstr ""
+
+#: ../inc/template-tags.php:46
+msgid "Next"
+msgstr ""
+
+#: ../inc/template-tags.php:52
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: ../inc/template-tags.php:56
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../inc/template-tags.php:83
+msgid "Pingback:"
+msgstr ""
+
+#: ../inc/template-tags.php:93
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: ../inc/template-tags.php:96
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../inc/template-tags.php:133
+#, php-format
+msgid ""
+"Posted by <span class=\"author vcard\"><a class=\"url fn n\" href=\"%1$s\" "
+"title=\"%2$s\" rel=\"author\">%3$s</a></span>"
+msgstr ""
+
+#: ../inc/template-tags.php:135
+#: ../template-parts/teaser-designmasonry-aside.php:46
+#: ../template-parts/teaser-designmasonry-audio.php:62
+#: ../template-parts/teaser-designmasonry-chat.php:46
+#: ../template-parts/teaser-designmasonry-gallery.php:73
+#: ../template-parts/teaser-designmasonry-image.php:73
+#: ../template-parts/teaser-designmasonry-link.php:47
+#: ../template-parts/teaser-designmasonry-quote.php:46
+#: ../template-parts/teaser-designmasonry-standard.php:75
+#: ../template-parts/teaser-designmasonry-status.php:46
+#: ../template-parts/teaser-designmasonry-video.php:76
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: ../inc/template-tags.php:145
+#, php-format
+msgid "in %1$s"
+msgstr ""
+
+#: ../inc/template-tags.php:150
+#, php-format
+msgid "on %1$s"
+msgstr ""
+
+#: ../inc/template-tags.php:150
+#: ../template-parts/teaser-designstandard-image.php:101
+#: ../template-parts/teaser-designstandard-part-content.php:41
+#: ../template-parts/teaser-designstandard-video.php:98
+msgid "Read: "
+msgstr ""
+
+#: ../inc/template-tags.php:200
+msgid "Tagged:"
+msgstr ""
+
+#: ../no-results.php:21
+msgid "Nothing Found"
+msgstr ""
+
+#: ../no-results.php:27
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../no-results.php:31
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../no-results.php:36
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../sidebar.php:27
+msgid "Meta"
+msgstr ""
+
+#: ../template-parts/content-search.php:56
+#, php-format
+msgid ""
+"This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink "
+"to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../template-parts/content-search.php:58
+#, php-format
+msgid ""
+"Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
+"\">permalink</a>."
+msgstr ""
+
+#: ../template-parts/content-search.php:64
+#, php-format
+msgid ""
+"This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
+"title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../template-parts/content-search.php:66
+#, php-format
+msgid ""
+"This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title="
+"\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../template-parts/teaser-designmasonry-aside.php:44
+#: ../template-parts/teaser-designmasonry-audio.php:60
+#: ../template-parts/teaser-designmasonry-chat.php:44
+#: ../template-parts/teaser-designmasonry-gallery.php:71
+#: ../template-parts/teaser-designmasonry-image.php:71
+#: ../template-parts/teaser-designmasonry-link.php:45
+#: ../template-parts/teaser-designmasonry-quote.php:44
+#: ../template-parts/teaser-designmasonry-standard.php:73
+#: ../template-parts/teaser-designmasonry-status.php:44
+#: ../template-parts/teaser-designmasonry-video.php:74
+#, php-format
+msgid ""
+"by <span class=\"author vcard\"><a class=\"url fn n\" href=\"%1$s\" title="
+"\"%2$s\" rel=\"author\">%3$s</a></span>"
+msgstr ""
+
+#: ../template-parts/teaser-designmasonry-aside.php:55
+#: ../template-parts/teaser-designmasonry-audio.php:71
+#: ../template-parts/teaser-designmasonry-chat.php:55
+#: ../template-parts/teaser-designmasonry-gallery.php:82
+#: ../template-parts/teaser-designmasonry-image.php:82
+#: ../template-parts/teaser-designmasonry-link.php:56
+#: ../template-parts/teaser-designmasonry-quote.php:55
+#: ../template-parts/teaser-designmasonry-standard.php:84
+#: ../template-parts/teaser-designmasonry-status.php:55
+#: ../template-parts/teaser-designmasonry-video.php:85
+#: ../template-parts/teaser-designstandard-image.php:103
+#: ../template-parts/teaser-designstandard-image.php:109
+#: ../template-parts/teaser-designstandard-part-content.php:43
+#: ../template-parts/teaser-designstandard-part-content.php:49
+#: ../template-parts/teaser-designstandard-video.php:100
+#: ../template-parts/teaser-designstandard-video.php:106
+msgid "Comment on: "
+msgstr ""
+
+#: ../template-parts/teaser-designstandard-image.php:101
+#: ../template-parts/teaser-designstandard-part-content.php:41
+#: ../template-parts/teaser-designstandard-video.php:98
+#: ../vc_templates/vc_projects_grid.php:225
+#: ../vc_templates/vc_teaser_grid.php:184
+msgid "Read more"
+msgstr ""
+
+#: ../template-parts/teaser-designstandard-image.php:103
+#: ../template-parts/teaser-designstandard-part-content.php:43
+#: ../template-parts/teaser-designstandard-video.php:100
+msgid "Leave your comment"
+msgstr ""
+
+#: ../template-parts/title-page.php:50
+msgid "You are searching for: "
+msgstr ""
+
+#: ../template-parts/title-page.php:53
+msgid "There is one post that match your criteria..."
+msgstr ""
+
+#: ../template-parts/title-page.php:55
+#, php-format
+msgid "Here are %s posts that match your criteria..."
+msgstr ""
+
+#: ../template-parts/title-page.php:57
+msgid "Looks like nothing was found. Sorry."
+msgstr ""
+
+#: ../template-parts/title-page.php:63
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: ../template-parts/title-page.php:66
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: ../template-parts/title-page.php:73
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: ../template-parts/title-page.php:81
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: ../template-parts/title-page.php:84
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: ../template-parts/title-page.php:87
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: ../vc_templates/vc_elements_carousel.php:44
+msgid "Previous slide"
+msgstr ""
+
+#: ../vc_templates/vc_elements_carousel.php:44
+msgid "Next slide"
+msgstr ""
+
+#: ../vc_templates/vc_flickr.php:20
+msgid "View stream on flickr"
+msgstr ""
+
+#: ../vc_templates/vc_projects_grid.php:401
+#: ../vc_templates/vc_teaser_grid.php:323
+msgid "All"
+msgstr ""
+
+#: ../vc_templates/vc_projects_grid.php:413
+#: ../vc_templates/vc_teaser_grid.php:335
+msgid "Nothing found."
+msgstr ""
+
+#, fuzzy
+#~ msgid "Page Titles"
+#~ msgstr "“”"
+
+#, fuzzy
+#~ msgid "Page background color"
+#~ msgstr "“”"

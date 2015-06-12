@@ -1,0 +1,217 @@
+/**
+ * ----------------------------------------------------------------------
+ * Blog section - common design styles
+ */
+
+
+body.blog,
+body.archive,
+body.page-template-page-demoblog-php {
+	.site-content {
+		// padding-top: 0;
+		padding-bottom: 0;
+
+		.hentry:first-child {
+			margin-top: -25px;
+			padding-top: 0;
+		}
+
+		.hentry:last-child {
+			border-bottom: none;
+		}
+	}
+}
+
+body.search-results .site-content {
+		padding-bottom: 0;
+}
+
+.posted-date a:before {
+	@include icon-font;
+	content: "\e058";
+	vertical-align: middle;
+	margin-right: 3px;
+	opacity: .5;
+}
+
+
+
+.blog .post-footer-meta {
+	display: none;
+}
+
+.post-format-icon {
+	display: inline-block;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	margin-bottom: .75em;
+	font-size: 24px;
+	line-height: 40px;
+	vertical-align: middle;
+
+	&:before {
+		@include icon-font;
+	}
+}
+
+// -------------------------------
+
+.post.sticky {
+	&.fixed {
+		position: relative;
+		top: auto;
+	}
+}
+
+.entry-title, .post-title {
+	word-wrap: break-word;
+}
+
+.entry-title {
+	margin-top: 0;
+	font-weight: 300;
+
+	a {
+		color: $header-font-color;
+	}
+}
+
+.entry-meta-badge {
+	border: 1px solid $ui-border-color;
+	@include border-radius ($global-radius);
+	overflow: hidden;
+	max-width: 80px;
+}
+
+.entry-meta-badge_date {
+	margin-top: emCalc(6px);
+	padding: 1em 1em 1.125em;
+
+	font-weight: 300;
+	line-height: 1;
+	text-align: center;
+
+	span {
+		display: inline-block;
+		margin-bottom: 3px;
+	}
+
+	.month {
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
+
+	.year {
+		letter-spacing: 2px;
+	}
+}
+
+.entry-meta-badge_coments {
+	background: rgba(0,0,0,.016);
+	font-size: 110%;
+	line-height: 1;
+	text-align: center;
+	border-top: 1px solid $ui-border-color;
+
+	a {
+		display: inline-block;
+		width: 100%;
+		padding: .75em;
+
+		span {
+			vertical-align: middle;
+			font-size: 140%;
+
+			&.no-comments-yet {
+				color: $body-font-color;
+				opacity: .75;
+			}
+		}
+	}
+}
+
+
+.entry-meta-badge_author {
+	position: relative;
+	display: block;
+	// overflow: hidden;
+	// @include border-radius (0 0 $global-radius $global-radius);
+	margin-bottom: -1px;
+
+	img {
+		margin: 0;
+		@include border-radius (0);
+		@include box-shadow (none);
+	}
+
+	&:after {
+		@include emptyPseudoElement();
+		@include box-shadow(0 1px 1px 0 rgba(0, 0, 0, 0.1) inset, 0 2px 5px 0 rgba(0, 0, 0, 0.1) inset);
+	}
+}
+
+.vcard {
+	display: inline;
+	margin:0;
+	border: none;
+	padding:0;
+
+	a {
+		font-weight: normal;
+		font-size: inherit;
+	}
+}
+
+
+.entry-content .entry-meta {
+	padding-left: $column-gutter / 2;
+}
+
+
+/**
+ * ----------------------------------------------------------------------
+ * Pagination
+ */
+
+.navigation-wrapper {
+	// border-top: 1px solid $ui-border-color;
+	margin-top: 4em;
+	// margin-bottom: -60px;
+}
+
+body.blog-style-standard .navigation-wrapper,
+body.single-post .navigation-wrapper {
+	margin-top: 0;
+}
+
+.navigation-paging {
+	@include clearfix;
+
+	a {
+		display: inline-block;
+		padding: 30px;
+		width: 100%;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+		border-right: 1px solid $ui-border-color;
+
+		a {
+			margin-left: -30px;
+		}
+	}
+
+	.nav-next {
+		float: right;
+		width: 50%;
+
+		text-align: right;
+
+		a {
+			margin-right: -30px;
+		}
+	}
+}
