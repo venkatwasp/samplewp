@@ -24,9 +24,17 @@ define('NONCE_SALT',       '!U-HH,,[.9`-st:RS1d,?SO9?@{8Y<}]cu_iwy8 P&gDW46oni6r
 
 define( 'WP_CACHE', TRUE );
 
+
+
 define( 'WP_AUTO_UPDATE_CORE', false );
 
+
+
+
 define( 'PWP_NAME', 'samplewp' );
+
+
+
 
 define( 'FS_METHOD', 'direct' );
 
@@ -70,6 +78,8 @@ define( 'FORCE_SSL_LOGIN', false );
 
 /*SSLSTART*/ if ( isset($_SERVER['HTTP_X_WPE_SSL']) && $_SERVER['HTTP_X_WPE_SSL'] ) $_SERVER['HTTPS'] = 'on'; /*SSLEND*/
 
+
+
 define( 'WPE_EXTERNAL_URL', false );
 
 define( 'WP_POST_REVISIONS', FALSE );
@@ -112,12 +122,8 @@ define('WPLANG','');
 # WP Engine ID
 
 
+
 # WP Engine Settings
-
-
-
-
-
 
 # That's It. Pencils down
 if ( !defined('ABSPATH') )
